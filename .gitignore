@@ -2,6 +2,7 @@
 /*/build/
 app/src/main/libs
 app/src/main/objs
+build/
 
 # Crashlytics configuations
 com_crashlytics_export_strings.xml

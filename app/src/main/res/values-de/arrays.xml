@@ -1,12 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
-<string-array name="fileEndingImage"><item>.png</item><item>.gif</item><item>.jpg</item><item>.jpeg</item><item>.bmp</item></string-array>
-<string-array name="fileEndingAudio"><item>.mp3</item><item>.wav</item><item>.ogg</item><item>.midi</item></string-array>
-<string-array name="fileEndingPackage"><item>.jar</item><item>.zip</item><item>.rar</item><item>.gz</item></string-array>
-<string-array name="fileEndingWebText"><item>.htm</item><item>.html</item><item>.php</item></string-array>
-<string-array name="fileEndingText"><item>.txt</item><item>.log</item></string-array>
-<string-array name="fileEndingVideo"><item>.wmv</item><item>.avi</item><item>.mpg</item><item>.mpeg</item><item>.mp4</item></string-array>
-<string-array name="fileEndingGeoPosition"><item>.loc</item><item>.gpx</item></string-array>
 <string-array name="file_options"><item>L&#246;schen</item><item>Senden an...</item></string-array>
 <string-array name="threed_options"><item>Kein</item><item>OpenGL</item><item>Software</item></string-array>
 <string-array name="screen_options"><item>Beide</item><item>Hauptbildschirm</item><item>Touch-Bildschirm</item></string-array>
