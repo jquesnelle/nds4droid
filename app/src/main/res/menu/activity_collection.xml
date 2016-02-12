@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+	<item
+		android:id="@+id/scanner_rescan"
+		android:title="@string/Rescan"/>
+	
+	<item
+	    android:id="@+id/scanner_filebrowser"
+	    android:title="@string/FileBrowser" />
+	
+	<item
+	    android:id="@+id/scanner_settings"
+	    android:title="@string/Settings" />
+
+</menu>

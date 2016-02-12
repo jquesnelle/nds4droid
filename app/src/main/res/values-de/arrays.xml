@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string-array name="fileEndingImage"><item>.png</item><item>.gif</item><item>.jpg</item><item>.jpeg</item><item>.bmp</item></string-array>
+<string-array name="fileEndingAudio"><item>.mp3</item><item>.wav</item><item>.ogg</item><item>.midi</item></string-array>
+<string-array name="fileEndingPackage"><item>.jar</item><item>.zip</item><item>.rar</item><item>.gz</item></string-array>
+<string-array name="fileEndingWebText"><item>.htm</item><item>.html</item><item>.php</item></string-array>
+<string-array name="fileEndingText"><item>.txt</item><item>.log</item></string-array>
+<string-array name="fileEndingVideo"><item>.wmv</item><item>.avi</item><item>.mpg</item><item>.mpeg</item><item>.mp4</item></string-array>
+<string-array name="fileEndingGeoPosition"><item>.loc</item><item>.gpx</item></string-array>
+<string-array name="file_options"><item>L&#246;schen</item><item>Senden an...</item></string-array>
+<string-array name="threed_options"><item>Kein</item><item>OpenGL</item><item>Software</item></string-array>
+<string-array name="screen_options"><item>Beide</item><item>Hauptbildschirm</item><item>Touch-Bildschirm</item></string-array>
+<string-array name="AutosaveFrequencyNames"><item>Jede Minute</item><item>Alle 5 Minuten</item><item>Alle 15 Minuten</item><item>Alle 30 Minuten</item><item>Jede Stunde</item></string-array>
+<string-array name="filternames"><item>Normal</item><item>HQ2x</item><item>2XSaI</item><item>Super2XSaI</item><item>SuperEagle</item><item>Scanline</item><item>Bilinear</item><item>Nearest 2X</item><item>HQ2xS</item><item>LQ2x</item><item>LQ2xS</item><item>EPX</item><item>Nearest+ 1.5X</item><item>Nearest 1.5X</item><item>EPX+</item><item>EPX 1.5X</item><item>EPX+ 1.5X</item><item>HQ4x</item></string-array>
+<string-array name="zerothroughnine"><item>0</item><item>1</item><item>2</item><item>3</item><item>4</item><item>5</item><item>6</item><item>7</item><item>8</item><item>9</item></string-array>
+<string-array name="zerothroughseventeen"><item>0</item><item>1</item><item>2</item><item>3</item><item>4</item><item>5</item><item>6</item><item>7</item><item>8</item><item>9</item><item>10</item><item>11</item><item>12</item><item>13</item><item>14</item><item>15</item><item>16</item><item>17</item></string-array>
+<string-array name="zerothroughtwo"><item>0</item><item>1</item><item>2</item></string-array>
+<string-array name="languages"><item>&#26085;&#26412;&#35486;</item><item>English</item><item>Fran&#231;ais</item><item>Deutsch</item><item>Italiano</item><item>Espa&#241;ol</item></string-array>
+<string-array name="zerothroughfive"><item>0</item><item>1</item><item>2</item><item>3</item><item>4</item><item>5</item></string-array>
+<string-array name="executionengines"><item>Interpreter</item><item>Threaded interpreter</item><item>lightning JIT</item></string-array>
+<string-array name="zerothroughthree"><item>0</item><item>1</item><item>2</item><item>3</item></string-array>
+<string-array name="zerothroughone"><item>0</item><item>1</item></string-array>
+<string-array name="soundsyncmodes"><item>Dual sync/async</item><item>Sync</item></string-array>
+<string-array name="zerothroughfour"><item>0</item><item>1</item><item>2</item><item>3</item><item>4</item></string-array>
+</resources>

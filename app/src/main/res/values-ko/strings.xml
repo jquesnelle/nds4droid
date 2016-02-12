@@ -1,0 +1,156 @@
+<resources>
+    
+	<!-- Release 1 -->
+    <string name="app_name">nds4droid</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">설정</string>
+    <string name="title_activity_main">nds4droid</string>
+	<string-array name="file_options">
+		<!--item>이름변경</item--> 
+		<item>삭제</item>
+		<!--item>잘라내기</item-->
+		<!--item>복사</item-->
+		<item>보내기</item>
+	</string-array>
+	<string name="rom_error">ROM 로딩 중 에러가 발생하였습니다 :(</string>
+	<string name="OK">OK</string>
+	<string name="location">위치</string>
+    <string name="cant_read_folder">폴더를 읽을 수 없습니다!</string>
+    <string name="nnew">새로 만들기</string>
+    <string name="select">선택</string>
+    <string name="file_name">파일명:</string>
+    <string name="cancel">취소</string>
+    <string name="create">세이브</string>
+    <string name="no_data">데이터 없음</string>
+    <color name="gray">#ffff0000</color>
+    <string name="err">에러</string>
+    <string name="Load">로드</string>
+    <string name="QuickSave">빠른 세이브</string>
+    <string name="QuickRestore">빠른 복원</string>
+    <string name="SaveState">현재상태 저장</string>
+    <string name="RestoreState">상태 복원</string>
+    <string name="Settings">설정</string>
+    
+	<!-- Release 2 -->
+    <string name="touchnotify">화면 상단 중앙의 \'터치\' 버튼을 사용하여 터치 모드에서 키패드 모드로 전환하실 수 있습니다</string>
+    <string name="frameskip">프레임 건너뛰기</string>
+    <string name="frameskipdesc">에뮬레이션 중 건너뛸 (Skip) 할 프레임 개수를 지정합니다. 느린 에뮬레이션을 실시간 속도에 맞추도록 돕습니다.</string>
+    <string name="vsync">수직 동기화 (VSync)</string>
+    <string name="vsyncdesc">화면의 주사율에 맞게 게임 화면의 갱신 속도를 동기화 합니다. 에뮬레이션을 느리게 하지만 꺼져있을 경우 화면에 글리치가 발생할 수 있습니다.</string>
+    <string name="fps">FPS 보여주기</string>
+    <string name="fpsdesc">FPS 를 스크린에 그립니다.</string>
+    <string name="showtouchmsg">터치 메시지 보여주기</string>
+    <string name="showtouchmsgdesc">터치방식/키패드방식 모드 변환에 관한 설명 메시지를 보여줍니다.</string>
+    
+    <!-- Release 3 -->
+    <string name="loading">로딩</string>    
+    
+    <!-- Release 4 -->
+    <string name="filter">스크린 필터</string>
+    <string name="filterdesc">사용자 기기의 해상도에 맞게 Nintendo DS 게임 해상도를 높여줄때 필요한 필터를 선택합니다. 고사양의 필터일 수록 게임 속도를 저하시킵니다.</string>
+    
+    <!-- Release 5 -->
+    <string name="threedrenderer">3D 렌더링</string>
+    <string name="threedrendererdesc">원하시는 3D 렌더링 엔진을 선택합니다.</string>
+    <string-array name ="threed_options">
+        <item>사용안함</item>
+        <item>OpenGL 렌더링</item>
+        <item>소프트웨어 자체 렌더링</item>
+    </string-array>
+    <string name="sound">사운드 켜기</string>
+    <string name="sounddesc">오디오 처리 및 재생 사용하기. 끌경우 게임 속도가 향상 됩니다.</string>
+    <string name="showsoundmsg">사운드 메시지 보여주기</string>
+    <string name="showsoundmsgdesc">게임 사운드를 켜고 끔에 관하여 사용자의 의향을 묻는 메시지를 보여줍니다.</string>
+    <string name="soundmsg">게임 사운드를 켜시겠습니까? 사운드를 켜실 경우 3 에서 5 FPS 성능 저하가 발생하게됩니다.</string>
+    <string name="yes">예</string>
+    <string name="no">아니오</string>
+    
+	<!-- Release 8 -->
+    <string name="Display">디스플레이</string>
+    <string name="Controls">컨트롤</string>
+    <string name="EditLayout">컨트롤 레이아웃 변경</string>
+    <string name="EditLayoutDesc">터치 컨트롤을 화면 어디에 배치할지 설정합니다.</string>
+    <string name="UseTouchPort">수직 터치버튼</string>
+    <string name="UseTouchPortDesc">화면위에 터치스크린을 수직으로 배치합니다.</string>
+    <string name="UseTouchLand">수평 터치버튼</string>
+    <string name="UseTouchLandDesc">화면위에 터치스크린을 수평으로 배치합니다.</string>
+    <string name="ResetLayout">터치 컨트롤 레이아웃 리셋</string>
+    <string name="ResetLayoutDesc">터치 컨트롤의 레이아웃을 기본상태로 초기화합니다.</string>
+    <string name="Sound">사운드</string>
+    <string name="LCDSwap">LCD 바꾸기</string>
+    <string name="LCDSwapDesc">메인 또는 터치 LCD의 위치를 바꿔줍니다.</string>
+    <string name="ButtonTrans">버튼 투명도</string>
+    <string name="ButtonTransDesc">버튼의 투명도를 설정합니다</string>
+    <string name="Haptic">햅틱 피드백</string>
+    <string name="HapticDesc">사용자 기기가 햅틱피드백을 지원할 경우 버튼을누를때 햅틱피드백 효과를냅니다.</string>
+    <string name="KeymapDialogDesc">본버튼에 매핑할 키를 설정합니다</string>
+    <string name="KeymapValuePreface">현재 매핑된 키</string>
+    <string name="EditKeymap">키매핑 변경</string>
+    <string name="EditKeymapDesc">하드웨어 키와 DS 버튼을 매핑합니다.</string>
+    <string name="Up">위</string>
+    <string name="Down">아래</string>
+    <string name="Left">왼쪽</string>
+    <string name="Right">오른쪽</string>
+    <string name="A">A</string>
+    <string name="B">B</string>
+    <string name="X">X</string>
+    <string name="Y">Y</string>
+    <string name="Select">start</string>
+    <string name="Start">Select</string>
+    <string name="L">L</string>
+    <string name="R">R</string>
+    <string name="Touch">터치</string>
+    
+    <!-- Release 10 -->
+    <string name="DontRotateLCDs">LCD회전 끄기</string>
+    <string name="DontRotateLCDsDesc">수평모드일때 게임 LCD 회전을 끕니다. 수평화면으로 즐기실 DS게임의 경우사용해주십시오.</string>
+    <string name="Language">언어</string>
+    <string name="LanguageDesc">시스템 언어를 설정합니다. 다중언어 ROM의경우 설정가능합니다. 다음번 ROM 로딩시 적용됩니다</string>
+    <string name="Gameplay">게임플레이</string>
+    
+    <!-- Release 11 -->
+    <string name="AddCheat">액션 리플레이 치트를 추가합니다</string>
+    <string name="Cheats">치트</string>
+    <string name="Exit">나가기</string>
+    <string name="Edit">변경</string>
+    <string name="Delete">삭제</string>
+    <string name="Description">설명</string>
+    <string name="Code">코드</string>
+    
+    <!-- Release 12 -->
+    <string name="EnableMicrophone">마이크 사용하기</string>
+    <string name="EnableMicrophoneDesc">사용자 기기의 마이크를 DS 마이크로 지정합니다.</string>
+    <string name="AlwaysTouch">터치이벤트 항상 처리하기</string>
+    <string name="AlwaysTouchDesc">터치모드가 아닌상태에서도 항상 DS터치스크린을 처리합니다. 컨트롤러와 터치스크린을 동시에 사용하는 게임을하실때 필요합니다.</string>
+    
+    <!-- Release 16 -->
+    <string name="MaintainAspectRatio">화면비율 유지</string>
+    <string name="MaintainAspectRatioDesc">DS의 화면비율을 유지합니다; 전체화면으로 부풀리지 않습니다.</string>
+	<string name="MainScreenOnly">메인스크린만 사용</string>
+	<string name="MainScreenOnlyDesc">터치스크린은 숨기고 메인 게임 스크린만 표시합니다</string>
+	<string name="LidOpen">lid 열림</string>
+    
+	<!-- Release 18 -->
+	<string name="SelectScreens">스크린 선택</string>
+	<string name="SelectScreensDesc">어떤 DS스크린을 활성화할지 선택합니다.</string>
+	<string-array name="screen_options">
+	    <item>둘다</item>
+	    <item>메인스크린민</item>
+	    <item>터치스크린만</item>
+	</string-array>
+	
+	<!-- Release 20 -->
+	<string name="Options">옵션</string>
+	
+	<!-- Release 22 -->
+	<string name="ExecutionEngine">처리엔진</string>
+	<string name="ExecutionEngineDesc">DS의 ARM 프로세서를 에뮬레이트할 엔진을 선택합니다.</string>
+	
+	<!-- Release 28 -->
+	<string name="SoundSyncMode">사운드 동기화 모드</string>
+	<string name="SoundSyncModeDesc">게임사운드 동기화 모드를 선택합니다. 보통 dual sync/async를 사용하시는게 빠르지만 영화나 음성처리에 sync가 필요할 수 있습니다.</string>
+	
+    <!-- Do not translate -->
+    
+    
+</resources>

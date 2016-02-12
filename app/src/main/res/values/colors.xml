@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	
+	<color name="bkg_collection">#ddd</color>
+	<color name="shadow">#22000000</color>
+	
+	<color name="bkg_card_normal">#fff</color>
+	<color name="bkg_card_pressed">#33b5e5</color>
+	
+</resources>

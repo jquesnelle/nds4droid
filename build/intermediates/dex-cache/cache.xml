@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="E:\nds4droid\app\libs\ouya-sdk.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="5dab43bc1a242b500146a8277a71bc1d997c83d6">
+        <dex dex="E:\nds4droid\app\build\intermediates\pre-dexed\debug\ouya-sdk_2476b07198969e0c2a5ca21fb2a14bcc682f9314.jar" />
+    </item>
+
+</items>

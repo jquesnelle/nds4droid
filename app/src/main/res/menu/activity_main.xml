@@ -1,0 +1,38 @@
+
+    <menu xmlns:android="http://schemas.android.com/apk/res/android">
+		<item android:id="@+id/load" android:title="@string/Load"></item>
+        <item android:id="@+id/quicksave" android:title="@string/QuickSave"></item>
+        <item android:id="@+id/quickrestore" android:title="@string/QuickRestore"></item>
+        <item android:id="@+id/cheats" android:title="@string/Cheats"></item>
+        <item android:id="@+id/settings" android:title="@string/Settings"></item>
+        <item android:id="@+id/savestate" android:title="@string/SaveState">
+            <menu>
+                <item android:id="@+id/save1" android:title="1"/>
+                <item android:id="@+id/save2" android:title="2"/>
+                <item android:id="@+id/save3" android:title="3"/>
+                <item android:id="@+id/save4" android:title="4"/>
+                <item android:id="@+id/save5" android:title="5"/>
+                <item android:id="@+id/save6" android:title="6"/>
+                <item android:id="@+id/save7" android:title="7"/>
+                <item android:id="@+id/save8" android:title="8"/>
+                <item android:id="@+id/save9" android:title="9"/>
+            </menu>
+        </item>
+        <item android:id="@+id/restorestate" android:title="@string/RestoreState">
+            <menu>
+                <item android:id="@+id/restoreauto" android:title="Autosave"/>
+                <item android:id="@+id/restore1" android:title="1"/>
+                <item android:id="@+id/restore2" android:title="2"/>
+                <item android:id="@+id/restore3" android:title="3"/>
+                <item android:id="@+id/restore4" android:title="4"/>
+                <item android:id="@+id/restore5" android:title="5"/>
+                <item android:id="@+id/restore6" android:title="6"/>
+                <item android:id="@+id/restore7" android:title="7"/>
+                <item android:id="@+id/restore8" android:title="8"/>
+                <item android:id="@+id/restore9" android:title="9"/>
+            </menu>
+        </item>
+        <item android:id="@+id/lid" android:title="@string/LidOpen" android:checkable="true"></item>
+        <item android:id="@+id/about" android:title="@string/about"/>
+        <item android:id="@+id/exit" android:title="@string/Exit"></item>
+    </menu>

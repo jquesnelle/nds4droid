@@ -1,0 +1,168 @@
+<resources>
+    
+	<!-- Release 1 -->
+    <string name="app_name">nds4droid</string>
+    <string name="hello_world">Hallo wereld!</string>
+    <string name="menu_settings">Instellingen</string>
+    <string name="title_activity_main">nds4droid</string>
+	<string-array name="file_options">
+		<!--item>Hernoem</item--> 
+		<item>Verwijder</item>
+		<!--item>knip</item-->
+		<!--item>Plak</item-->
+		<item>Verstuur Naar...</item>
+	</string-array>
+	<string name="rom_error">Er was een fout bij het laden van deze ROM :(</string>
+	<string name="OK">OK</string>
+	<string name="location">Locatie</string>
+    <string name="cant_read_folder">Map kan niet worden gelezen!</string>
+    <string name="nnew">Nieuw</string>
+    <string name="select">Selecteer</string>
+    <string name="file_name">Bestand Naam:</string>
+    <string name="cancel">Annuleer</string>
+    <string name="create">Opslaan</string>
+    <string name="no_data">Geen Data</string>
+    <color name="gray">#ffff0000</color>
+    <string name="err">Error</string>
+    <string name="Load">Laad</string>
+    <string name="QuickSave">Quick Save</string>
+    <string name="QuickRestore">Quick Restore</string>
+    <string name="SaveState">Save State</string>
+    <string name="RestoreState">Restore State</string>
+    <string name="Settings">Instellingen</string>
+    
+    <!-- Release 2 -->
+    <string name="touchnotify">Om te schakelen tussen touch mode en keypad mode, tik op de "touch" knop bovenaan</string>
+    <string name="frameskip">Frame overslaan</string>
+    <string name="frameskipdesc">Hoeveel frames overslaan bij emulatie. Helpt bij trage emulatie overeen te komen met de echte tijd.</string>
+    <string name="vsync">VSync</string>
+    <string name="vsyncdesc">Enkel schrijven naar het scherm tussen frames. Kan emulatie vertragen maar uitschakelen kan grafische storingen veroorzaken.</string>
+    <string name="fps">Toon FPS</string>
+    <string name="fpsdesc">Toon FPS op het scherm.</string>
+    <string name="showtouchmsg">Toon aanraak bericht</string>
+    <string name="showtouchmsgdesc">Toon een bericht aan de gebruiker om wisselen tussen touch/keypad modus uit te leggen.</string>
+    
+    <!-- Release 3 -->
+    <string name="loading">Laden</string>    
+    
+    <!-- Release 4 -->
+    <string name="filter">Scherm Filter</string>
+    <string name="filterdesc">Filter om te gebruiken bij het opschalen van de Nintendo DS resolutie naar die van het toestel. Hoge kwaliteit filters kunnen prestaties verminderen.</string>
+    
+    <!-- Release 5 -->
+    <string name="threedrenderer">3D Renderer</string>
+    <string name="threedrendererdesc">Welke 3D rendering engine te gebruiken.</string>
+    <string-array name ="threed_options">
+        <item>Geen</item>
+        <item>OpenGL</item>
+        <item>Software</item>
+    </string-array>
+    <string name="sound">Geluid inschakelen</string>
+    <string name="sounddesc">Schakel verwerken en afspelen van geluid in. Uitschakelen kan een performance verhogen.</string>
+    <string name="showsoundmsg">Toon geluid bericht</string>
+    <string name="showsoundmsgdesc">Toon de vraag aan de gebruiker of deze geluid wil inschakelen.</string>
+    <string name="soundmsg">Wil je geluid inschakelen? Dit kan een verlies betekenen van 3 tot 5 FPS.</string>
+    <string name="yes">ja</string>
+    <string name="no">Neen</string>
+    
+    <!-- Release 8 -->
+    <string name="Display">Scherm</string>
+    <string name="Controls">Controls</string>
+    <string name="EditLayout">Pas knoppen lay-out aan</string>
+    <string name="EditLayoutDesc">Verander locatie van de aanraak knoppen op het scherm.</string>
+    <string name="UseTouchPort">Portret aanraak knoppen</string>
+    <string name="UseTouchPortDesc">Gebruik aanraak knoppen op het scherm in portret modus.</string>
+    <string name="UseTouchLand">Landschap aanraak knoppen</string>
+    <string name="UseTouchLandDesc">Gebruik aanraak knoppen op het scherm in landschap modus.</string>
+    <string name="ResetLayout">Reset knoppen lay-out</string>
+    <string name="ResetLayoutDesc">Reset de lay-out van de aanraak knoppen naar de standaard waarden.</string>
+    <string name="Sound">Geluid</string>
+    <string name="LCDSwap">Wissel Schermen</string>
+    <string name="LCDSwapDesc">Vink aan om de locatie van het hoofdscherm en aanraakscherm te wisselen.</string>
+    <string name="ButtonTrans">Knoppen doorzichtigheid</string>
+    <string name="ButtonTransDesc">Hoe transparant moeten de koppen op het scherm zijn</string>
+    <string name="Haptic">Haptische feedback</string>
+    <string name="HapticDesc">Geef haptische feedback wanneer er op een knop word gedrukt wanneer ondersteund door toestel.</string>
+    <string name="KeymapDialogDesc">Druk een toets om deze knop aan toe te wijzen</string>
+    <string name="KeymapValuePreface">Momenteel toegewezen aan</string>
+    <string name="EditKeymap">Bewerk knoppen toewijzingen</string>
+    <string name="EditKeymapDesc">Bewerk toewijzingen van de hardware knoppen naar de DS knoppen.</string>
+    <string name="Up">Boven</string>
+    <string name="Down">Onder</string>
+    <string name="Left">Links</string>
+    <string name="Right">Rechts</string>
+    <string name="A">A</string>
+    <string name="B">B</string>
+    <string name="X">X</string>
+    <string name="Y">Y</string>
+    <string name="Select">Start</string>
+    <string name="Start">Select</string>
+    <string name="L">L</string>
+    <string name="R">R</string>
+    <string name="Touch">Touch</string>
+    
+    <!-- Release 10 -->
+    <string name="DontRotateLCDs">LCDs niet draaien</string>
+    <string name="DontRotateLCDsDesc">In landschap modus, draai de spel schermen niet. Gebruik dit voor spellen die bedoeld zijn om om zijdelings gespeeld te worden.</string>
+    <string name="Language">Taal</string>
+    <string name="LanguageDesc">De taal van het systeem. Meertalige ROMs gebruiken deze instelling. Aanpassingen worden doorgevoerd bij het laden volgende ROM.</string>
+    <string name="Gameplay">Gameplay</string>
+    
+    <!-- Release 11 -->
+    <string name="AddCheat">Voeg nieuwe Action Replay cheat toe</string>
+    <string name="Cheats">Cheats</string>
+    <string name="Exit">Exit</string>
+    <string name="Edit">Aanpassen</string>
+    <string name="Delete">Verwijderen</string>
+    <string name="Description">Beschrijving</string>
+    <string name="Code">Code</string>
+    
+    <!-- Release 12 -->
+    <string name="EnableMicrophone">Gebruik microfoon</string>
+    <string name="EnableMicrophoneDesc">Gebruik microfoon toestel als die van de DS.</string>
+    <string name="AlwaysTouch">Altijd touch toestaan</string>
+    <string name="AlwaysTouchDesc">Verwerk altijd het DS aanraakscherm, ook wanneer niet in touch mode. Voor spellen die gebruik maken van knoppen en aanraakscherm tegelijk.</string>
+    
+    <!-- Release 16 -->
+    <string name="MaintainAspectRatio">Behoud aspect ratio</string>
+    <string name="MaintainAspectRatioDesc">Behoud aspect ratio van de DS; rek het beeld niet uit om op het scherm te passen.</string>
+	<string name="MainScreenOnly">Enkel Hoofdscherm</string>
+	<string name="MainScreenOnlyDesc">Geef enkel het hoofdscherm weer, aanraakscherm niet weergeven.</string>
+	<string name="LidOpen">Scherm open</string>
+    
+	<!-- Release 18 -->
+	<string name="SelectScreens">Selecteer schermen</string>
+	<string name="SelectScreensDesc">Kies welke DS schermen getoond worden.</string>
+	<string-array name="screen_options">
+	    <item>Beide</item>
+	    <item>Hoofd scherm</item>
+	    <item>Aanraakscherm</item>
+	</string-array>
+	
+	<!-- Release 20 -->
+	<string name="Options">Opties</string>
+	
+	<!-- Release 22 -->
+	<string name="ExecutionEngine">Execution engine</string>
+	<string name="ExecutionEngineDesc">De engine die de ARM processor emuleert van de DS.</string>
+	
+	<!-- Release 28 -->
+	<string name="SoundSyncMode">Geluid syncronisatie mode</string>
+	<string name="SoundSyncModeDesc">Syncronistatie van het spelgeluid.  Dual sync/async is meestal OK en sneller, maar Sync is  soms nodig voor films of spraak.</string>
+	
+	<!-- Release 29 -->
+	<string name="JitSize">JIT block grote</string>
+	<string name="JitSizeDesc">Voor de threaded interpreter/tinycc JIT execution engines, Toon hoe groot elke JIT block zou moeten zijn. 1 is het meest nauwkeurig, terwijl 100 de snelste is.</string>
+	<string name="about1">nds4droid is een gratis, open source Nintendo DS emulator.</string>
+	<string name="about2">nds4droid is het resultaat van ontelbare uren werk door tientallen medewerkers. De emulatie kern gebruikt door nds4droid is DeSmuME.</string>
+	<string name="about3">Jeffrey Quesnelle is de primaire ontwikkelaar van nds4droid. nds4droid is een product van Sterling Heights, Michigan, United States of America.</string>
+	<string name="about4">Speciale dank aan gechdcb voor zijn  bijdrage van de threaded interpreter en lightning JIT.</string>
+	<string name="about5">nds4droid website: http://nds4droid.com\nDeSmuME website: http://desmume.org</string>
+	<string name="about">Over</string>
+	
+	<!-- Release 30 -->
+	<string name="EnableFog">activeer mist</string>
+	<string name="EnableFogDesc">Bij het gebruiken van de Software renderer, schakel het verwerken van mist effecten in.</string>
+	
+    
+</resources>

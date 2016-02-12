@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="20dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="10dp" >
+    
+   	<TextView
+   	    android:id="@+id/current_value_noimg"
+   	    android:layout_width="fill_parent"
+   	    android:layout_height="wrap_content"
+   	    android:gravity="center_horizontal" />
+
+    <SeekBar
+        android:id="@+id/seek_bar_noimg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/current_value_noimg"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/min_value_noimg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seek_bar_noimg"
+        android:layout_alignParentLeft="true"
+        android:textColor="#aaaaaa" />
+
+    <TextView
+        android:id="@+id/max_value_noimg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/seek_bar_noimg"
+        android:textColor="#aaaaaa" />
+
+</RelativeLayout>

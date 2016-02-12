@@ -1,0 +1,155 @@
+<resources>
+    
+	<!-- Release 1 -->
+    <string name="app_name">nds4droid</string>
+    <string name="hello_world">Olá Mundo!</string>
+    <string name="menu_settings">Definições</string>
+    <string name="title_activity_main">nds4droid</string>
+	<string-array name="file_options">
+		<!--item>Rename</item--> 
+		<item>Apagar</item>
+		<!--item>Cut</item-->
+		<!--item>Copy</item-->
+		<item>Enviar para...</item>
+	</string-array>
+	<string name="rom_error">Ocorreu um erro ao carregar este ROM :(</string>
+	<string name="OK">OK</string>
+	<string name="location">Localização</string>
+    <string name="cant_read_folder">Não é possivel ler a pasta!</string>
+    <string name="nnew">Novo</string>
+    <string name="select">Selecionar</string>
+    <string name="file_name">Nome do ficheiro:</string>
+    <string name="cancel">Cancelar</string>
+    <string name="create">Salvar</string>
+    <string name="no_data">Sem Data</string>
+    <color name="gray">#ffff0000</color>
+    <string name="err">Erro</string>
+    <string name="Load">Carregar</string>
+    <string name="QuickSave">Salvar Rápido</string>
+    <string name="QuickRestore">Restaurar Rápido</string>
+    <string name="SaveState">Salvar Estado</string>
+    <string name="RestoreState">Restaurar Estado</string>
+    <string name="Settings">Definições</string>
+    
+    <!-- Release 2 -->
+    <string name="touchnotify">Para alternar entre modo táctil e de teclas, toca no botão "touch" localizado no topo.</string>
+    <string name="frameskip">Saltar Frames</string>
+    <string name="frameskipdesc">Quantas frames saltar enquanto estiver a correr a emulação. Ajuda a emulação lenta a corresponder ao tempo real.</string>
+    <string name="vsync">VSync</string>
+    <string name="vsyncdesc">Só desenhar no ecrã entre frames. Pode tornar a emulação lenta mas desligando-o pode causar erros gráficos.</string>
+    <string name="fps">Mostrar FPS</string>
+    <string name="fpsdesc">Mostrar os FPS no ecrã.</string>
+    <string name="showtouchmsg">Mostrar mensagem táctil</string>
+    <string name="showtouchmsgdesc">Mostra uma mensagem ao utilizador explicando como mudar para o modo táctil/teclas.</string>
+    
+    <!-- Release 3 -->
+    <string name="loading">A Carregar</string>    
+    
+    <!-- Release 4 -->
+    <string name="filter">Filtro De Ecrã</string>
+    <string name="filterdesc">Filtro a usar quando transformar a resolução da Nintendo DS para o teu ecrã. Filtros de alta qualidade podem diminuir a velocidade.</string>
+    
+    <!-- Release 5 -->
+    <string name="threedrenderer">Renderização 3D</string>
+    <string name="threedrendererdesc">Qual o motor de renderização 3D a usar.</string>
+    <string-array name ="threed_options">
+        <item>Nenhum</item>
+        <item>OpenGL</item>
+        <item>Software</item>
+    </string-array>
+    <string name="sound">Ativar Som</string>
+    <string name="sounddesc">Ativa o processamento e reprodução de audio. Desativar pode aumentar a velocidade.</string>
+    <string name="showsoundmsg">Mostrar mensagem de som</string>
+    <string name="showsoundmsgdesc">Mostrar uma pergunta ao utilizador perguntando se quer ativar o som.</string>
+    <string name="soundmsg">Gostarias de ativar o som? Isto pode causar uma queda de 3 a 5 FPS.</string>
+    <string name="yes">Sim</string>
+    <string name="no">Não</string>
+    
+    <!-- Release 8 -->
+    <string name="Display">Ecrã</string>
+    <string name="Controls">Controlos</string>
+    <string name="EditLayout">Editar Controlos</string>
+    <string name="EditLayoutDesc">Edita onde os controlos tácteis estao posicionados no ecrã.</string>
+    <string name="UseTouchPort">Botões tácteis em modo vertical</string>
+    <string name="UseTouchPortDesc">Usar os botões tácteis no ecrã em modo vertical.</string>
+    <string name="UseTouchLand">Botões tácteis em modo horizontal</string>
+    <string name="UseTouchLandDesc">Usar os botões tácteis no ecrã em modo horizontal.</string>
+    <string name="ResetLayout">Restabelecer o layout dos botões</string>
+    <string name="ResetLayoutDesc">Restabelecer a posição original dos botões.</string>
+    <string name="Sound">Som</string>
+    <string name="LCDSwap">Trocar Ecrãs</string>
+    <string name="LCDSwapDesc">Seleciona para mudar a posição do ecra principal e do ecrã táctil.</string>
+    <string name="ButtonTrans">Transparencia dos botões</string>
+    <string name="ButtonTransDesc">O quanto transparente os botões no ecrã devem ser</string>
+    <string name="Haptic">Resposta táctil</string>
+    <string name="HapticDesc">Proporciona resposta táctil quando se toca nos botões se suportado pelo dispositivo.</string>
+    <string name="KeymapDialogDesc">Pressiona uma tecla para mapear esta botão</string>
+    <string name="KeymapValuePreface">Atualmente mapeado a</string>
+    <string name="EditKeymap">Editar mapeados das teclas</string>
+    <string name="EditKeymapDesc">Editar mapeados de teclas a botões da DS.</string>
+    <string name="Up">Cima</string>
+    <string name="Down">Baixo</string>
+    <string name="Left">Esquerda</string>
+    <string name="Right">Direita</string>
+    <string name="A">A</string>
+    <string name="B">B</string>
+    <string name="X">X</string>
+    <string name="Y">Y</string>
+    <string name="Select">Start</string>
+    <string name="Start">Select</string>
+    <string name="L">L</string>
+    <string name="R">R</string>
+    <string name="Touch">Touch</string>
+    
+    <!-- Release 10 -->
+    <string name="DontRotateLCDs">Nao Rodar Ecrãs</string>
+    <string name="DontRotateLCDsDesc">Em modo horizontal, não rodar os ecrãs. Usa isto para jogos que sejam jogados com a DS de lado.</string>
+    <string name="Language">Linguagem</string>
+    <string name="LanguageDesc">A linguagem do sistema. ROMs de multi-linguagem usam esta definição. As mudaças serão aplicados na proxima ROM carregada.</string>
+    <string name="Gameplay">Jogabilidade</string>
+    
+    <!-- Release 11 -->
+    <string name="AddCheat">Adiciona um cheat Action Replay</string>
+    <string name="Cheats">Cheats</string>
+    <string name="Exit">Sair</string>
+    <string name="Edit">Editar</string>
+    <string name="Delete">Apagar</string>
+    <string name="Description">Descrição</string>
+    <string name="Code">Codigo</string>
+    
+    <!-- Release 12 -->
+    <string name="EnableMicrophone">Ativar Microfone</string>
+    <string name="EnableMicrophoneDesc">Usa o microfone do teu dispositivo como microfone da DS.</string>
+    <string name="AlwaysTouch">Permitir sempre toque</string>
+    <string name="AlwaysTouchDesc">Processar sempre o ecrã táctil da DS, mesmo sem estar em modo táctil. Para jogos que utilizem controlos e ecrã táctil ao mesmo tempo.</string>
+    
+    <!-- Release 16 -->
+    <string name="MaintainAspectRatio">Manter aspect ratio</string>
+    <string name="MaintainAspectRatioDesc">Manter o aspect ratio da DS; nao esticar para encher o ecrã.</string>
+	<string name="MainScreenOnly">Só o ecrã principal</string>
+	<string name="MainScreenOnlyDesc">Mostrar só o ecrã principal, escondendo o ecrã táctil.</string>
+	<string name="LidOpen">Lid open</string>
+    
+	<!-- Release 18 -->
+	<string name="SelectScreens">Seleccionar ecrãs</string>
+	<string name="SelectScreensDesc">Escolhe qual ecrã da DS será mostrado.</string>
+	<string-array name="screen_options">
+	    <item>Ambos</item>
+	    <item>Principal</item>
+	    <item>Táctil</item>
+	</string-array>
+	
+	<!-- Release 20 -->
+	<string name="Options">Opções</string>
+	
+	<!-- Release 22 -->
+	<string name="ExecutionEngine">Motor de execução</string>
+	<string name="ExecutionEngineDesc">O motor usado para emulaor os processadores ARM da DS.</string>
+	
+	<!-- Release 28 -->
+	<string name="SoundSyncMode">Modo de sincronização do som</string>
+	<string name="SoundSyncModeDesc">Sincronização do som do jogo. Dual sync/async é o mais rapido, mas o Sync é por vezes preciso para videos ou voz.</string>
+	
+    <!-- Do not translate -->
+
+</resources>

@@ -1,0 +1,20 @@
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/addcheat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/AddCheat" />
+
+        <ListView
+            android:id="@+id/cheatList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+        </ListView>
+
+    </LinearLayout>

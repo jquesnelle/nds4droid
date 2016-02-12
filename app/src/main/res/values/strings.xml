@@ -1,0 +1,289 @@
+<resources>
+    
+	<!-- Release 1 -->
+    <string name="app_name">nds4droid</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">nds4droid</string>
+	<string-array name="file_options">
+		<!--item>Rename</item--> 
+		<item>Delete</item>
+		<!--item>Cut</item-->
+		<!--item>Copy</item-->
+		<item>Send To...</item>
+	</string-array>
+	<string name="rom_error">There was an error loading this ROM :(</string>
+	<string name="OK">OK</string>
+	<string name="location">Location</string>
+    <string name="cant_read_folder">Folder can\'t be read!</string>
+    <string name="nnew">New</string>
+    <string name="select">Select</string>
+    <string name="file_name">File name:</string>
+    <string name="cancel">Cancel</string>
+    <string name="create">Save</string>
+    <string name="no_data">No Data</string>
+    <color name="gray">#ffff0000</color>
+    <string name="err">Error</string>
+    <string name="Load">Load</string>
+    <string name="QuickSave">Quick Save</string>
+    <string name="QuickRestore">Quick Restore</string>
+    <string name="SaveState">Save State</string>
+    <string name="RestoreState">Restore State</string>
+    <string name="Settings">Settings</string>
+    
+    <!-- Release 2 -->
+    <string name="touchnotify">To toggle between touch mode and keypad mode, tap the "touch" button at the top</string>
+    <string name="frameskip">Frame skip</string>
+    <string name="frameskipdesc">How many frames to skip when emulating. Helps make slow emulation match real time.</string>
+    <string name="vsync">VSync</string>
+    <string name="vsyncdesc">Only draw to the screen in-between frames. Can slow down emulation but turning off may cause graphical glitches.</string>
+    <string name="fps">Show FPS</string>
+    <string name="fpsdesc">Draw FPS onto screen.</string>
+    <string name="showtouchmsg">Show touch message</string>
+    <string name="showtouchmsgdesc">Display a message to the user explaining touch/keypad mode switching.</string>
+    
+    <!-- Release 3 -->
+    <string name="loading">Loading</string>    
+    
+    <!-- Release 4 -->
+    <string name="filter">Screen filter</string>
+    <string name="filterdesc">Filter to use when upscaling from Nintendo DS resolution to your screen. Higher quality filters may degrade performance.</string>
+    
+    <!-- Release 5 -->
+    <string name="threedrenderer">3D Renderer</string>
+    <string name="threedrendererdesc">Which 3D rendering engine to use.</string>
+    <string-array name ="threed_options">
+        <item>None</item>
+        <item>OpenGL</item>
+        <item>Software</item>
+    </string-array>
+    <string name="sound">Enable sound</string>
+    <string name="sounddesc">Enable processing and playback of audio. Disabling can increase performance.</string>
+    <string name="showsoundmsg">Show sound message</string>
+    <string name="showsoundmsgdesc">Display a question to the user asking if they would like to enable sound.</string>
+    <string name="soundmsg">Would you like to enable sound? This can cause a 3 to 5 FPS performance loss.</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    
+    <!-- Release 8 -->
+    <string name="Display">Display</string>
+    <string name="Controls">Controls</string>
+    <string name="EditLayout">Edit controls layout</string>
+    <string name="EditLayoutDesc">Edit where the touch controls are placed on the screen.</string>
+    <string name="UseTouchPort">Portrait touch buttons</string>
+    <string name="UseTouchPortDesc">Use touch buttons on the screen in portrait mode.</string>
+    <string name="UseTouchLand">Landscape touch buttons</string>
+    <string name="UseTouchLandDesc">Use touch buttons on the screen in landscape mode.</string>
+    <string name="ResetLayout">Reset controls layout</string>
+    <string name="ResetLayoutDesc">Reset the layout of touch controls to their defaults.</string>
+    <string name="Sound">Sound</string>
+    <string name="LCDSwap">Swap LCDs</string>
+    <string name="LCDSwapDesc">Check to swap the location of the main and touch LCDs.</string>
+    <string name="ButtonTrans">Button transparency</string>
+    <string name="ButtonTransDesc">How transparent the on-screen touch buttons should be</string>
+    <string name="Haptic">Haptic feedback</string>
+    <string name="HapticDesc">Provide haptic feedback on button press if supported by device.</string>
+    <string name="KeymapDialogDesc">Press a key to map to this button</string>
+    <string name="KeymapValuePreface">Currently mapped to</string>
+    <string name="EditKeymap">Edit key mappings</string>
+    <string name="EditKeymapDesc">Edit mappings from hardware keys to DS buttons.</string>
+    <string name="Up">Up</string>
+    <string name="Down">Down</string>
+    <string name="Left">Left</string>
+    <string name="Right">Right</string>
+    <string name="A">A</string>
+    <string name="B">B</string>
+    <string name="X">X</string>
+    <string name="Y">Y</string>
+    <string name="Select">Start</string>
+    <string name="Start">Select</string>
+    <string name="L">L</string>
+    <string name="R">R</string>
+    <string name="Touch">Touch</string>
+    
+    <!-- Release 10 -->
+    <string name="DontRotateLCDs">Don\'t rotate LCDs</string>
+    <string name="DontRotateLCDsDesc">In landscape mode, don\'t rotate the game LCDs. Use this for games that were intended to played with the DS held sideways.</string>
+    <string name="Language">Language</string>
+    <string name="LanguageDesc">The language of the system. Multilingual ROMs use this setting. Changes will be applied on the next ROM load.</string>
+    <string name="Gameplay">Gameplay</string>
+    
+    <!-- Release 11 -->
+    <string name="AddCheat">Add a new Action Replay cheat</string>
+    <string name="Cheats">Cheats</string>
+    <string name="Exit">Exit</string>
+    <string name="Edit">Edit</string>
+    <string name="Delete">Delete</string>
+    <string name="Description">Description</string>
+    <string name="Code">Code</string>
+    
+    <!-- Release 12 -->
+    <string name="EnableMicrophone">Enable microphone</string>
+    <string name="EnableMicrophoneDesc">Use your device\'s microphone as the DS microphone.</string>
+    <string name="AlwaysTouch">Always allow touch</string>
+    <string name="AlwaysTouchDesc">Always process the DS touchscreen, even when not in touch mode. For games that require using controls and touchscreen at the same time.</string>
+    
+    <!-- Release 16 -->
+    <string name="MaintainAspectRatio">Maintain aspect ratio</string>
+    <string name="MaintainAspectRatioDesc">Maintain the aspect ratio of the DS; don\'t stretch to fit the screen.</string>
+	<string name="MainScreenOnly">Main screen only</string>
+	<string name="MainScreenOnlyDesc">Only display the main game screen, hiding the touch screen.</string>
+	<string name="LidOpen">Lid open</string>
+    
+	<!-- Release 18 -->
+	<string name="SelectScreens">Select screens</string>
+	<string name="SelectScreensDesc">Pick which DS screens will be shown.</string>
+	<string-array name="screen_options">
+	    <item>Both</item>
+	    <item>Main</item>
+	    <item>Touch</item>
+	</string-array>
+	
+	<!-- Release 20 -->
+	<string name="Options">Options</string>
+	
+	<!-- Release 22 -->
+	<string name="ExecutionEngine">Execution engine</string>
+	<string name="ExecutionEngineDesc">The engine used to emulate the ARM processors of the DS.</string>
+	
+	<!-- Release 28 -->
+	<string name="SoundSyncMode">Sound sync mode</string>
+	<string name="SoundSyncModeDesc">Synchronization of the game\'s sound. Dual sync/async is usually okay and is faster, but Sync is sometimes needed for movies or voice.</string>
+	
+	<!-- Release 29 -->
+	<string name="JitSize">JIT block size</string>
+	<string name="JitSizeDesc">For the threaded interpreter/tinycc JIT execution engines, how big each JIT block should be. 1 is most accurate, while 100 is fastest</string>
+	<string name="about1">nds4droid is a free, open source Nintendo DS emulator.</string>
+	<string name="about2">nds4droid is the result of countless hours of work by dozens of contributators. The emulation core used by nds4droid is DeSmuME.</string>
+	<string name="about3">Jeffrey Quesnelle is the primary developer of nds4droid. nds4droid is a product of Sterling Heights, Michigan, United States of America.</string>
+	<string name="about4">Special thanks to gechdcb for his contribution of the threaded interpreter and lightning JIT.</string>
+	<string name="about5">nds4droid website: http://nds4droid.com\nDeSmuME website: http://desmume.org</string>
+	<string name="about">About</string>
+	
+	<!-- Release 30 -->
+	<string name="EnableFog">Enable fog</string>
+	<string name="EnableFogDesc">When using the software renderer, enable processing of fog effects.</string>
+	
+	<!-- Release 38 -->
+	<string name="EnableAutosave">Enable autosave</string>
+	<string name="EnableAutosaveDesc">Automatically save the game state at a regular interval.</string>
+	<string name="AutosaveFrequency">Autosave frequency</string>
+	<string name="AutosaveFrequencyDesc">How frequently the autosave feature saves the game state.</string>
+	<string-array name="AutosaveFrequencyNames">
+	    <item>1 minute</item>
+	    <item>5 minutes</item>
+	    <item>15 minutes</item>
+	    <item>30 minutes</item>
+	    <item>1 hour</item>    
+	</string-array>
+	<string name="Rescan">Rescan</string>
+	<string name="FileBrowser">File browser</string>
+	
+	<!-- Release 39 -->
+	<string name="ScanningForROMs">Scanning external storage...</string>
+	
+	<!-- Release 43 -->
+	<string name="DisableROMBrowser">Disable ROM browser</string>
+	<string name="DisableROMBrowserDesc">Disable the auto-scanning ROM browser. Simply show the file browser on launch.</string>
+	
+    <!-- Do not translate -->
+    <string-array name="filternames">
+        <item>Normal</item>
+		<item>HQ2x</item>
+		<item>2XSaI</item>
+		<item>Super2XSaI</item>
+		<item>SuperEagle</item>
+		<item>Scanline</item>
+		<item>Bilinear</item>
+		<item>Nearest 2X</item>
+		<item>HQ2xS</item>
+		<item>LQ2x</item>
+		<item>LQ2xS</item>
+        <item>EPX</item>
+        <item>Nearest+ 1.5X</item>
+        <item>Nearest 1.5X</item>
+        <item>EPX+</item>
+        <item>EPX 1.5X</item>
+        <item>EPX+ 1.5X</item>
+        <item>HQ4x</item>
+    </string-array>
+        <string-array name="zerothroughnine">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+    </string-array>
+    <string-array name="zerothroughseventeen">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+    </string-array>
+   	<string-array name="zerothroughtwo">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="languages">
+        <item>日本語</item>
+        <item>English</item>
+        <item>Français</item>
+        <item>Deutsch</item>
+        <item>Italiano</item>
+        <item>Español</item>
+    </string-array>
+    <string-array name="zerothroughfive">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="executionengines">
+        <item>Interpreter</item>
+        <item>Threaded interpreter</item>
+        <item>lightning JIT</item>
+    </string-array>
+    <string-array name="zerothroughthree">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="zerothroughone">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="soundsyncmodes">
+        <item>Dual sync/async</item>
+        <item>Sync</item>
+    </string-array>
+    <string-array name="zerothroughfour">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+</resources>

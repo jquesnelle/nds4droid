@@ -1,0 +1,165 @@
+<resources>
+    
+	<!-- Release 1 -->
+    <string name="app_name">nds4droid</string>
+    <string name="hello_world">שלום עולם!</string>
+    <string name="menu_settings">הגדרות</string>
+    <string name="title_activity_main">nds4droid</string>
+	<string-array name="file_options">
+		<!--item>שנה שם</item--> 
+		<item>מחק</item>
+		<!--item>גזור</item-->
+		<!--item>העתק</item-->
+		<item>שלח אל...</item>
+	</string-array>
+	<string name="rom_error">ארעה שגיאה בטעינת הרום :(</string>
+	<string name="OK">אישור</string>
+	<string name="location">מיקום</string>
+    <string name="cant_read_folder">קריאת התיקייה נכשלה</string>
+    <string name="nnew">חדש</string>
+    <string name="select">בחר</string>
+    <string name="file_name">שם הקובץ:</string>
+    <string name="cancel">בטל</string>
+    <string name="create">שמור</string>
+    <string name="no_data">אין נתונים</string>
+    <color name="gray">#ffff0000</color>
+    <string name="err">שגיאה</string>
+    <string name="Load">טען</string>
+    <string name="QuickSave">שמירה מהירה</string>
+    <string name="QuickRestore">טעינה מהירה</string>
+    <string name="SaveState">שמירה</string>
+    <string name="RestoreState">טען שמירה</string>
+    <string name="Settings">הגדרות</string>
+    
+    <!-- Release 2 -->
+    <string name="touchnotify">על מנת להחליף בין מצב מגע ל-מצב מקשים, לחץ על כפתור מגע שלמעלה</string>
+    <string name="frameskip">דילוג פריימים</string>
+    <string name="frameskipdesc">על כמה פריימים לדלג בשעת האימולציה. מסייע בהתאמת האימולציה האיטית לזמן האמת</string>
+    <string name="vsync">VSync</string>
+    <string name="vsyncdesc">העבר התמונות למסך בין הפריימים בלבד. יכול להאט את האימולציה, אך כיבויו עשוי לגרום לשיבושים חזותיים</string>
+    <string name="fps">פריימים לשניה</string>
+    <string name="fpsdesc">הצג על המסך את כמות הפריימים המוצגים בשניה</string>
+    <string name="showtouchmsg">הראה את ההודעה בדבר מגע</string>
+    <string name="showtouchmsgdesc">הצג הודעה למשתמש המסבירה לגבי המעבר בין מצב מגע למצב מקשים.</string>
+    
+    <!-- Release 3 -->
+    <string name="loading">טוען</string>    
+    
+    <!-- Release 4 -->
+    <string name="filter">פילטר מסך</string>
+    <string name="filterdesc">הפילטר בו משתמשים בעת העלה הרזולוציה מזו של הנינטנדו די.אס לזו של המכשיר. בחירה בפילטרים באיכות גבוהה עשויה לפגוע בביצועים</string>
+    
+    <!-- Release 5 -->
+    <string name="threedrenderer">3D Renderer</string>
+    <string name="threedrendererdesc">באיזה מנוע רנדור בתלת מימד להשתמש</string>
+    <string-array name ="threed_options">
+        <item>שום מנוע</item>
+        <item>OpenGL</item>
+        <item>תוכנה</item>
+    </string-array>
+    <string name="sound">אפשר השמעת קול</string>
+    <string name="sounddesc">אפשר עיבוד והשמעה של קול. נטרול יכול לשפר את הביצועים </string>
+    <string name="showsoundmsg">הראה את ההודעה בדבר קול</string>
+    <string name="showsoundmsgdesc">הצג למשתמש הודעה השואלת האם ברצונו לאפשר השמעת קול</string>
+    <string name="soundmsg">האם תרצה לאפשר השמעת קול? זה עלול להביא לירידת הביצועים בכ-3 על 5 פריימים לשניה</string>
+    <string name="yes">כן</string>
+    <string name="no">לא</string>
+    
+    <!-- Release 8 -->
+    <string name="Display">תצוגה</string>
+    <string name="Controls">מקשים</string>
+    <string name="EditLayout">ערוך את פריסת המקשים</string>
+    <string name="EditLayoutDesc">ערוך את מיקומם של מקשי המגע על המסך</string>
+    <string name="UseTouchPort">מקשי מגע בתצוגה אנכית</string>
+    <string name="UseTouchPortDesc">השתמש במקשי המגע על המסך בעת תצוגה אנכית</string>
+    <string name="UseTouchLand">מקשי המגע בתצוגה אופקית</string>
+    <string name="UseTouchLandDesc">השתמש במקשי המגע על המסך בעת תצוגה אופקית</string>
+    <string name="ResetLayout">אתחל את פריסת המקשים</string>
+    <string name="ResetLayoutDesc">שחזר את הגדרות ברירת המחדל של פריסת המקשים</string>
+    <string name="Sound">קול</string>
+    <string name="LCDSwap">החלף בין המסכים</string>
+    <string name="LCDSwapDesc">סמן על מנת להחליף בין מיקומיהם של המסך הראשי והמסך המשני</string>
+    <string name="ButtonTrans">שקיפות מקשים</string>
+    <string name="ButtonTransDesc">כמה שקופים צריכים להיות מקשי המגע שעל המסך</string>
+    <string name="Haptic">רטט</string>
+    <string name="HapticDesc">הפעל רטט בעת לחיצה על מקשים. מותנה בתמיכת המכשיר בפונקציה</string>
+    <string name="KeymapDialogDesc">לחץ על כפתור על מנת למפות מקש זה</string>
+    <string name="KeymapValuePreface">ממופה כעת ל</string>
+    <string name="EditKeymap">ערוך את מיפוי המקשים</string>
+    <string name="EditKeymapDesc">ערוך את המיפוי ממקשי החומרה למקשי הדי.אס</string>
+    <string name="Up">למעלה</string>
+    <string name="Down">למטה</string>
+    <string name="Left">שמאל</string>
+    <string name="Right">ימין</string>
+    <string name="A">A</string>
+    <string name="B">B</string>
+    <string name="X">X</string>
+    <string name="Y">Y</string>
+    <string name="Select">Start</string>
+    <string name="Start">Select</string>
+    <string name="L">L</string>
+    <string name="R">R</string>
+    <string name="Touch">מגע</string>
+    
+    <!-- Release 10 -->
+    <string name="DontRotateLCDs">אל תחליף בין המסכים</string>
+    <string name="DontRotateLCDsDesc">במצג תצוגה אופקית, המנע מלהחליף בין המשסכים. השתמש בפונקציה זו למשחקים שבהם אמורים להחזיק את הדי.אס על הצד</string>
+    <string name="Language">שפה</string>
+    <string name="LanguageDesc">שפת המערכת. רומים התומכים במספר שפות משתמשים בהגדרה זו. השינויים ייושמו כלפי הרום הבא שיטען</string>
+    <string name="Gameplay">משחקיות</string>
+    
+    <!-- Release 11 -->
+    <string name="AddCheat">הוסף ציט מסוג אקשן ריפליי</string>
+    <string name="Cheats">ציטים</string>
+    <string name="Exit">יציאה</string>
+    <string name="Edit">ערוך</string>
+    <string name="Delete">מחק</string>
+    <string name="Description">תיאור</string>
+    <string name="Code">קוד</string>
+    
+    <!-- Release 12 -->
+    <string name="EnableMicrophone">אפשר האזנה למיקרופטן</string>
+    <string name="EnableMicrophoneDesc">משתמש במיקרופון המכשיר כמיקרופון הדי.אס</string>
+    <string name="AlwaysTouch">אפשר מגע תמיד</string>
+    <string name="AlwaysTouchDesc">אפשר תמיד לחיצה על מסך המגע, גם כשלא במצב מגע. השתמש בפונקציה זו בעת הפעלה משחקים שדורשים שימוש במסך המשני ובמקשים במקביל</string>
+    
+    <!-- Release 16 -->
+    <string name="MaintainAspectRatio">שמור על יחס התצוגה</string>
+    <string name="MaintainAspectRatioDesc">שמור על יחס התצוגה של הדי.אס. אל תמתח את המסך</string>
+	<string name="MainScreenOnly">מסך ראשי בלבד</string>
+	<string name="MainScreenOnlyDesc">הצג את המסך הראשי בלבד. החבא את המסך המשני</string>
+	<string name="LidOpen">מכסה פתוח</string>
+    
+	<!-- Release 18 -->
+	<string name="SelectScreens">בחר מסכים</string>
+	<string name="SelectScreensDesc">בחר אילו מסכי די.אס יוצגו</string>
+	<string-array name="screen_options">
+	    <item>שניהם</item>
+	    <item>ראשי</item>
+	    <item>מגע</item>
+	</string-array>
+	
+	<!-- Release 20 -->
+	<string name="Options">אפשרויות</string>
+	
+	<!-- Release 22 -->
+	<string name="ExecutionEngine">מנוע ביצוע</string>
+	<string name="ExecutionEngineDesc">המנוע המשמש לאימולציה של מעבדי הדי.אס</string>
+	
+	<!-- Release 28 -->
+	<string name="SoundSyncMode">מצב סינכרון קול</string>
+	<string name="SoundSyncModeDesc">סינכרון הקול.האפשרות הראשונה טובה בדרך כלל, אבל השנייה דרושה לעיתים עבור סרטונים או קול</string>
+	
+	<!-- Release 29 -->
+	<string name="JitSize">JIT block size</string>
+	<string name="JitSizeDesc">For the threaded interpreter/tinycc JIT execution engines, how big each JIT block should be. 1 is most accurate, while 100 is fastest</string>
+	<string name="about1">הוא אימולטור חינמי לנינטנדו .די.אס המבוסס על קוד פתוח nds4droid</string>
+	<string name="about2">האימולטור הוא תוצר של אינספור שעות של מאמץ של תורמים רבים</string>
+	<string name="about3">גפרי קווסנל הוא המפתח העיקרי של האימולטור. האימולטור פותח בסטרלינג הייטס, מישיגן, ארצות הברית של אמריקה</string>
+	<string name="about4">Special thanks to gechdcb for his contribution of the threaded interpreter and tinycc JIT.</string>
+	<string name="about5">nds4droid website: http://nds4droid.com\nDeSmuME website: http://desmume.org</string>
+	<string name="about">אודות</string>
+	
+    <!-- Do not translate -->
+    
+</resources>

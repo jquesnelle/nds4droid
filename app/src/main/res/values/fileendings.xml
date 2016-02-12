@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<array name="fileEndingImage">
+        <item>".png"</item>
+        <item>".gif"</item>
+        <item>".jpg"</item>
+        <item>".jpeg"</item>
+        <item>".bmp"</item>
+    </array>
+	<array name="fileEndingAudio">
+        <item>".mp3"</item>
+        <item>".wav"</item>
+        <item>".ogg"</item>
+        <item>".midi"</item>
+    </array>
+	<array name="fileEndingPackage">
+        <item>.jar</item>
+        <item>.zip</item>
+        <item>.rar</item>
+        <item>.gz</item>
+    </array>
+	<array name="fileEndingWebText">
+        <item>.htm</item>
+        <item>.html</item>
+        <item>.php</item>
+    </array>
+    <array name="fileEndingText">
+        <item>.txt</item>
+        <item>.log</item>
+    </array>
+    <array name="fileEndingVideo">
+        <item>.wmv</item>
+        <item>.avi</item>
+        <item>.mpg</item>
+        <item>.mpeg</item>
+        <item>.mp4</item>
+    </array>
+    <array name="fileEndingGeoPosition">
+        <item>.loc</item>
+        <item>.gpx</item>
+    </array>
+</resources>
+     

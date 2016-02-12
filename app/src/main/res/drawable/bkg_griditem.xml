@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<inset xmlns:android="http://schemas.android.com/apk/res/android"
+	android:insetLeft="6dip"
+	android:insetTop="4dip"
+	android:insetRight="6dip"
+	android:insetBottom="4dip">
+	
+	<layer-list>
+		<item>
+			<shape android:shape="rectangle" android:dither="true">
+				<corners android:radius="2dip"/>
+				<solid android:color="@color/shadow" />
+			</shape>
+		</item>
+	
+		<item android:bottom="2dip">
+			<selector>
+				<item android:state_pressed="false">
+					<shape android:shape="rectangle" android:dither="true">
+						<corners android:radius="2dip" />
+						<solid android:color="@color/bkg_card_normal"/>
+						<padding android:bottom="8dip" android:left="8dip" android:right="8dip" android:top="8dip" />
+					</shape>
+				</item>
+				<item android:state_pressed="true">
+					<shape android:shape="rectangle" android:dither="true">
+						<corners android:radius="2dip" />
+						<solid android:color="@color/bkg_card_pressed"/>
+						<padding android:bottom="8dip" android:left="8dip" android:right="8dip" android:top="8dip" />
+					</shape>
+				</item>
+			</selector>
+		</item>
+	</layer-list>
+	
+</inset>

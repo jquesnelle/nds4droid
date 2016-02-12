@@ -1,0 +1,155 @@
+<resources>
+    
+	<!-- Release 1 -->
+    <string name="app_name">nds4droid</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">設定</string>
+    <string name="title_activity_main">nds4droid</string>
+	<string-array name="file_options">
+		<!--item>Rename</item--> 
+		<item>Delete</item>
+		<!--item>Cut</item-->
+		<!--item>Copy</item-->
+		<item>Send To...</item>
+	</string-array>
+	<string name="rom_error">ROMのロード中にエラーが発生しました :(</string>
+	<string name="OK">OK</string>
+	<string name="location">ROMの場所</string>
+    <string name="cant_read_folder">このフォルダは読み込めません</string>
+    <string name="nnew">新規</string>
+    <string name="select">選択</string>
+    <string name="file_name">ファイル名:</string>
+    <string name="cancel">キャンセル</string>
+    <string name="create">セーブ</string>
+    <string name="no_data">データ無し</string>
+    <color name="gray">#ffff0000</color>
+    <string name="err">エラー</string>
+    <string name="Load">ROMのロード</string>
+    <string name="QuickSave">すぐにセーブ</string>
+    <string name="QuickRestore">すぐに再開</string>
+    <string name="SaveState">スロットにセーブ</string>
+    <string name="RestoreState">スロットから再開</string>
+    <string name="Settings">設定</string>
+    
+    <!-- Release 2 -->
+    <string name="touchnotify">タッチモードとキーパッドモードは、画面中央のtouchボタンで切り替わります</string>
+    <string name="frameskip">フレームスキップ</string>
+    <string name="frameskipdesc">フレーム描画を適宜スキップすることで、ゲームのリアルタイム性が向上します。</string>
+    <string name="vsync">垂直同期</string>
+    <string name="vsyncdesc">オフにすることでゲーム速度は向上しますが、描画に異常が発生する場合があります。</string>
+    <string name="fps">FPS表示</string>
+    <string name="fpsdesc">画面上にFPSを表示します。</string>
+    <string name="showtouchmsg">タッチメッセージを表示</string>
+    <string name="showtouchmsgdesc">タッチモード・キーパッドモードの切替を説明するメッセージを表示します。</string>
+    
+    <!-- Release 3 -->
+    <string name="loading">ロード中</string>    
+    
+    <!-- Release 4 -->
+    <string name="filter">スクリーンフィルタ</string>
+    <string name="filterdesc">ゲーム本来の解像度を、端末画面の解像度へと変換する際のフィルタを選択します。高品質なフィルタほどゲーム速度の低下を招きます。</string>
+    
+    <!-- Release 5 -->
+    <string name="threedrenderer">3Dレンダラ</string>
+    <string name="threedrendererdesc">３Dレンダリングエンジンを選択します。</string>
+    <string-array name ="threed_options">
+        <item>なし</item>
+        <item>OpenGL</item>
+        <item>ソフトウェア処理</item>
+    </string-array>
+    <string name="sound">サウンド有効化</string>
+    <string name="sounddesc">ゲームサウンドの有無を設定します。無効化により、ゲーム速度が向上する場合があります。</string>
+    <string name="showsoundmsg">サウンドメッセージ表示</string>
+    <string name="showsoundmsgdesc">サウンドを有効化するか否かについて尋ねます。</string>
+    <string name="soundmsg">サウンドを有効化しますか？（３～５FPS分の遅延が発生する場合があります）</string>
+    <string name="yes">はい</string>
+    <string name="no">いいえ</string>
+    
+    <!-- Release 8 -->
+    <string name="Display">Display</string>
+    <string name="Controls">Controls</string>
+    <string name="EditLayout">タッチボタン位置調整</string>
+    <string name="EditLayoutDesc">各タッチボタンの、画面上の位置を調整します。</string>
+    <string name="UseTouchPort">ボタン表示(ポートレート時)</string>
+    <string name="UseTouchPortDesc">ポートレートモード(画面縦長)時にタッチボタンを表示します。</string>
+    <string name="UseTouchLand">ボタン表示(ランドスケープ時)</string>
+    <string name="UseTouchLandDesc">ランドスケープモード(画面横長)時にタッチボタンを表示します。</string>
+    <string name="ResetLayout">タッチボタンの位置設定初期化</string>
+    <string name="ResetLayoutDesc">タッチボタンの位置を初期化します。</string>
+    <string name="Sound">サウンド</string>
+    <string name="LCDSwap">LCD画面入替</string>
+    <string name="LCDSwapDesc">メイン画面とタッチ画面の位置を入れ替えます。</string>
+    <string name="ButtonTrans">タッチボタンの透明度</string>
+    <string name="ButtonTransDesc">タッチボタンの透明度を調整します。</string>
+    <string name="Haptic">触覚フィードバック</string>
+    <string name="HapticDesc">タッチボタン押下に伴う触覚フィードバックを有効化します(端末がサポートしている場合)。</string>
+    <string name="KeymapDialogDesc">このタッチボタンに対応させたいキーを押してください。</string>
+    <string name="KeymapValuePreface">現在の割り当て：</string>
+    <string name="EditKeymap">ハードウェアキーマッピング</string>
+    <string name="EditKeymapDesc">端末のハードウェアキーをDSのボタンに対応させます。</string>
+    <string name="Up">Up</string>
+    <string name="Down">Down</string>
+    <string name="Left">Left</string>
+    <string name="Right">Right</string>
+    <string name="A">A</string>
+    <string name="B">B</string>
+    <string name="X">X</string>
+    <string name="Y">Y</string>
+    <string name="Select">Start</string>
+    <string name="Start">Select</string>
+    <string name="L">L</string>
+    <string name="R">R</string>
+    <string name="Touch">Touch</string>
+    
+    <!-- Release 10 -->
+    <string name="DontRotateLCDs">画面回転無効化</string>
+    <string name="DontRotateLCDsDesc">ランドスケープモードにおけるLCD画面のローテーションを無効化します。</string>
+    <string name="Language">言語</string>
+    <string name="LanguageDesc">ゲームシステムの言語を選択します.多言語対応のROMはこの設定を利用します。変更は、次回ROMロード時に適用されます。</string>
+    <string name="Gameplay">ゲームプレイ</string>
+    
+    <!-- Release 11 -->
+    <string name="AddCheat">プロアクションリプレイのチートを新規追加</string>
+    <string name="Cheats">チート</string>
+    <string name="Exit">終了</string>
+    <string name="Edit">編集</string>
+    <string name="Delete">削除</string>
+    <string name="Description">説明</string>
+    <string name="Code">コード</string>
+    
+    <!-- Release 12 -->
+    <string name="EnableMicrophone">マイク有効化</string>
+    <string name="EnableMicrophoneDesc">端末のマイクをDSのマイクとして使用します。</string>
+    <string name="AlwaysTouch">タッチを常時有効化</string>
+    <string name="AlwaysTouchDesc">タッチモード時でなくとも、常時DSタッチスクリーンを処理します。タッチとキー操作を同時に要求するゲームに対して有効です。</string>
+    
+    <!-- Release 16 -->
+    <string name="MaintainAspectRatio">アスペクト比を保持</string>
+    <string name="MaintainAspectRatioDesc">DSのアスペクト比を保持</string>
+	<string name="MainScreenOnly">メイン画面のみ</string>
+	<string name="MainScreenOnlyDesc">タッチスクリーンを隠し、メインのゲーム画面のみ表示</string>
+	<string name="LidOpen">蓋を開ける</string>
+    
+	<!-- Release 18 -->
+	<string name="SelectScreens">画面選択</string>
+	<string name="SelectScreensDesc">どのDS画面を表示するか選択</string>
+	<string-array name="screen_options">
+	    <item>両方</item>
+	    <item>メイン</item>
+	    <item>タッチ</item>
+	</string-array>
+	
+	<!-- Release 20 -->
+	<string name="Options">オプション</string>
+	
+	<!-- Release 22 -->
+	<string name="ExecutionEngine">実行エンジン</string>
+	<string name="ExecutionEngineDesc">DSのARMプロセッサをエミュレートするエンジン</string>
+	
+	<!-- Release 28 -->
+	<string name="SoundSyncMode">サウンド同期モード</string>
+	<string name="SoundSyncModeDesc">ゲームサウンドの同期。同期・非同期併用で通常は問題ありませんが、音声や動画再生に有用な場合があります</string>
+	
+    <!-- Do not translate -->
+
+</resources>

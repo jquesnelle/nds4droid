@@ -1,0 +1,107 @@
+<resources>
+
+	<!-- Release 1 -->
+    <string name="app_name">nds4droid</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Configurações</string>
+    <string name="title_activity_main">nds4droid</string>
+	<string-array name="file_options">
+		<!--item>Renomear</item--> 
+		<item>Deletar</item>
+		<!--item>Cortar</item-->
+		<!--item>Copiar</item-->
+		<item>Mandar para...</item>
+	</string-array>
+	<string name="rom_error">Aconteceu um problema carregando este jogo ;(</string>
+	<string name="OK">OK</string>
+	<string name="location">Localização</string>
+    <string name="cant_read_folder">Pasta não pode ser lida</string>
+    <string name="nnew">Novo</string>
+    <string name="select">Selecionar</string>
+    <string name="file_name">Nome do arquivo:</string>
+    <string name="cancel">Cancelar</string>
+    <string name="create">Salvar dados</string>
+    <string name="no_data">Sem dados</string>
+    <color name="gray">#ffff0000</color>
+    <string name="err">Erro</string>
+    <string name="Load">Selecionar</string>
+    <string name="QuickSave">Salvar rápido</string>
+    <string name="QuickRestore">Restaurar rápido</string>
+    <string name="SaveState">Salvar estado</string>
+    <string name="RestoreState">Restaurar estado</string>
+    <string name="Settings">Configurações</string>
+
+    <!-- Release 2 -->
+    <string name="touchnotify">Para escolher entre, tela touch e setas, aperte o botão circular touch na parte de cima.</string>
+    <string name="frameskip">Saltar Frames</string>
+    <string name="frameskipdesc">Quantos frames eu devo saltar? Ajuda a emulação alcançar a velocidade original.</string>
+    <string name="vsync">VSync</string>
+    <string name="vsyncdesc">Somente desenha na tela no espaço entre um frame e outro. Pode lentar a emulação porém desliga-lo pode causar desfunções no gráfico.</string>
+    <string name="fps">Mostrar FPS</string>
+    <string name="fpsdesc">Mostra "frames per second" na tela</string>
+    <string name="showtouchmsg">Mostrar menssagem ao usar touch</string>
+    <string name="showtouchmsgdesc">Mostra menssagem quando escolhendo entre setas e touchscreen.</string>
+
+    <!-- Release 3 -->
+    <string name="loading">Carregando</string>    
+
+    <!-- Release 4 -->
+    <string name="filter">Filtro de tela</string>
+    <string name="filterdesc">Filtro quando aumentando a resolução do nds na sua tela. Aumentando diminuirá a performance.</string>
+
+    <!-- Release 5 -->
+    <string name="threedrenderer">Suporte 3D</string>
+    <string name="threedrendererdesc">Qual driver de suporte 3D usar.</string>
+    <string-array name ="threed_options">
+        <item>Nenhuma</item>
+        <item>OpenGL</item>
+        <item>Sistema</item>
+    </string-array>
+    <string name="sound">Ativar som</string>
+    <string name="sounddesc">Ativar processo e reprodução do áudio. Desativando pode melhorar a performance.</string>
+    <string name="showsoundmsg">Som ativado</string>
+    <string name="showsoundmsgdesc">Mostrar pergunta ao usuário antes de ativar a reprodução do áudio.</string>
+    <string name="soundmsg">Você tem certeza que deseja ativar o som? Ativando-o pode causar a perda de 3 a 5 Frames por segundo.</string>
+    <string name="yes">Sim</string>
+    <string name="no">Não</string>
+    
+    <!-- Release 8 -->
+    <string name="Display">Display</string>
+    <string name="Controls">Controles</string>
+    <string name="EditLayout">Editar o modo dos controles</string>
+    <string name="EditLayoutDesc">Edite a posição dos controles</string>
+    <string name="UseTouchPort">Modo de retratação</string>
+    <string name="UseTouchPortDesc">Use controles em modo de retratação.</string>
+    <string name="UseTouchLand">Modo de visualização</string>
+    <string name="UseTouchLandDesc">Use controles maiores.</string>
+    <string name="ResetLayout">Resetar controles</string>
+    <string name="ResetLayoutDesc">Resetar configurações dos controles.</string>
+    <string name="Sound">Som</string>
+    <string name="LCDSwap">Trocar LCDs</string>
+    <string name="LCDSwapDesc">Troque a localização da tela touch e a tela normal.</string>
+    <string name="ButtonTrans">Transparência dos botões</string>
+    <string name="ButtonTransDesc">Transparência dos botões na tela.</string>
+    <string name="Haptic">Haptic feedback</string>
+    <string name="HapticDesc">Fornece Haptic feedback se o aparelho suportar.</string>
+    <string name="KeymapDialogDesc">Presione uma tecla para mapear o botão</string>
+    <string name="KeymapValuePreface">Atualmente mapeado em...</string>
+    <string name="EditKeymap">Editar mapeamentos de teclas</string>
+    <string name="EditKeymapDesc">Use o mapeamento das teclas do seu celular para usar no DS.</string>
+    <string name="Up">Cima</string>
+    <string name="Down">Baixo</string>
+    <string name="Left">Esquerda</string>
+    <string name="Right">Direita</string>
+    <string name="A">A</string>
+    <string name="B">B</string>
+    <string name="X">X</string>
+    <string name="Y">Y</string>
+    <string name="Select">Start</string>
+    <string name="Start">Select</string>
+    <string name="L">L</string>
+    <string name="R">R</string>
+    <string name="Touch">Touch</string>
+    
+    <!-- Do not translate -->
+    
+    
+</resources>

@@ -1,0 +1,156 @@
+<resources>
+    
+	<!-- Release 1 -->
+    <string name="app_name">nds4droid</string>
+    <string name="hello_world">测试程序!</string>
+    <string name="menu_settings">设置</string>
+    <string name="title_activity_main">nds4droid</string>
+	<string-array name="file_options">
+		<!--item>重命名</item--> 
+		<item>删除</item>
+		<!--item>剪切</item-->
+		<!--item>拷贝</item-->
+		<item>发送至...</item>
+	</string-array>
+	<string name="rom_error">读取ROM出错(</string>
+	<string name="OK">确定</string>
+	<string name="location">定位</string>
+    <string name="cant_read_folder">无法读取文件夹</string>
+    <string name="nnew">新建</string>
+    <string name="select">选择</string>
+    <string name="file_name">文件名：</string>
+    <string name="cancel">取消</string>
+    <string name="create">保存</string>
+    <string name="no_data">无数据</string>
+    <color name="gray">#ffff0000</color>
+    <string name="err">错误</string>
+    <string name="Load">读取</string>
+    <string name="QuickSave">快速保存</string>
+    <string name="QuickRestore">快速恢复</string>
+    <string name="SaveState">保存状态</string>
+    <string name="RestoreState">恢复状态</string>
+    <string name="Settings">设定</string>
+    
+    <!-- Release 2 -->
+    <string name="touchnotify">请点击顶部的“点击”按钮以切换键盘和触屏模式</string>
+    <string name="frameskip">跳帧</string>
+    <string name="frameskipdesc">在模拟状态下跳过多少帧，可以加速实现实时仿真</string>
+    <string name="vsync">VSync</string>
+    <string name="vsyncdesc">只在帧间绘制屏幕. 可以减慢仿真，如关闭会导致图像故障</string>
+    <string name="fps">显示 FPS</string>
+    <string name="fpsdesc">绘制 FPS 到屏幕</string>
+    <string name="showtouchmsg">显示触摸信息</string>
+    <string name="showtouchmsgdesc">在触屏和键盘模式间切换时，显示一条消息给用户</string>
+    
+    <!-- Release 3 -->
+    <string name="loading">加载中</string>    
+    
+    <!-- Release 4 -->
+    <string name="filter">屏幕过滤器</string>
+    <string name="filterdesc">过滤器用于调节屏幕分比率，在从任天堂DS屏幕转换到现有屏幕，高分辨率的过滤器会影响渲染性能.</string>
+    
+    <!-- Release 5 -->
+    <string name="threedrenderer">三维渲染器</string>
+    <string name="threedrendererdesc">选择三维渲染引擎</string>
+    <string-array name ="threed_options">
+        <item>无</item>
+        <item>OpenGL</item>
+        <item>软件</item>
+    </string-array>
+    <string name="sound">开启声音</string>
+    <string name="sounddesc">开启音频回放和音频处理。关闭此项可以提高性能</string>
+    <string name="showsoundmsg">显示声音信息</string>
+    <string name="showsoundmsgdesc">显示一条消息询问用户是否需要开启声音</string>
+    <string name="soundmsg">是否需要开启声音? 这会导致降低 3 到5 FPS 的性能</string>
+    <string name="yes">是</string>
+    <string name="no">否</string>
+	
+	<!-- Release 8 -->
+    <string name="Display">Display</string>
+    <string name="Controls">Controls</string>
+    <string name="EditLayout">编辑按键布局</string>
+    <string name="EditLayoutDesc">编辑虚拟按键在屏幕上的位置</string>
+    <string name="UseTouchPort">竖屏按键</string>
+    <string name="UseTouchPortDesc">设备竖屏时使用虚拟按键</string>
+    <string name="UseTouchLand">横屏按键</string>
+    <string name="UseTouchLandDesc">手机横屏时使用虚拟按键</string>
+    <string name="ResetLayout">重置虚拟按键</string>
+    <string name="ResetLayoutDesc">重置虚拟按键到默认状态，包括布局与透明度。</string>
+    <string name="Sound">Sound</string>
+    <string name="LCDSwap">颠倒上下屏</string>
+    <string name="LCDSwapDesc">颠倒上屏和触摸屏</string>
+    <string name="ButtonTrans">按键透明度</string>
+    <string name="ButtonTransDesc">设置虚拟按键的透明度</string>
+    <string name="Haptic">按键震动</string>
+    <string name="HapticDesc">如果设备支持，可以开启按键震动</string>
+    <string name="KeymapDialogDesc">Press a key to to map to this button</string>
+    <string name="KeymapValuePreface">Currently mapped to</string>
+    <string name="EditKeymap">编辑按键映射</string>
+    <string name="EditKeymapDesc">映射到设备的实体按键上</string>
+    <string name="Up">上</string>
+    <string name="Down">下</string>
+    <string name="Left">左</string>
+    <string name="Right">右</string>
+    <string name="A">A</string>
+    <string name="B">B</string>
+    <string name="X">X</string>
+    <string name="Y">Y</string>
+    <string name="Select">Start</string>
+    <string name="Start">Select</string>
+    <string name="L">L</string>
+    <string name="R">R</string>
+    <string name="Touch">Touch</string>
+    
+    <!-- Release 10 -->
+    <string name="DontRotateLCDs">固定的方向屏幕</string>
+    <string name="DontRotateLCDsDesc">手机系统横屏时，上下屏幕不会翻转。用于横向持机的特殊游戏，如七日死。</string>
+    <string name="Language">语言</string>
+    <string name="LanguageDesc">The language of the system. Multilingual ROMs use this setting. Changes will be applied on the next ROM load.</string>
+    <string name="Gameplay">Gameplay</string>
+    
+    <!-- Release 11 -->
+    <string name="AddCheat">添加新的金手指</string>
+    <string name="Cheats">金手指</string>
+    <string name="Exit">退出</string>
+    <string name="Edit">编辑</string>
+    <string name="Delete">删除</string>
+    <string name="Description">备注</string>
+    <string name="Code">代码</string>
+    
+    <!-- Release 12 -->
+    <string name="EnableMicrophone">模拟麦克风</string>
+    <string name="EnableMicrophoneDesc">使用设备的麦克风来模拟ds的麦克风（线控耳机麦克风可用）</string>
+    <string name="AlwaysTouch">总是允许触摸操作</string>
+    <string name="AlwaysTouchDesc">在虚拟按键操作的同时进行触摸操作，用于某些特殊游戏，如美妙世界。</string>
+    
+    <!-- Release 16 -->
+    <string name="MaintainAspectRatio">保持原有比例</string>
+    <string name="MaintainAspectRatioDesc">不会拉伸至全屏</string>
+	<string name="MainScreenOnly">Main screen only</string>
+	<string name="MainScreenOnlyDesc">Only display the main game screen, hiding the touch screen.</string>
+	<string name="LidOpen">打开上屏</string>
+    
+	<!-- Release 18 -->
+	<string name="SelectScreens">选择屏幕</string>
+	<string name="SelectScreensDesc">选择要显示的ds屏幕</string>
+	<string-array name="screen_options">
+	    <item>全部显示</item>
+	    <item>只显示上屏</item>
+	    <item>只显示下屏</item>
+	</string-array>
+	
+	<!-- Release 20 -->
+	<string name="Options">Options</string>
+	
+	<!-- Release 22 -->
+	<string name="ExecutionEngine">执行引擎</string>
+	<string name="ExecutionEngineDesc">The engine used to emulate the ARM processors of the DS.</string>
+	
+	<!-- Release 28 -->
+	<string name="SoundSyncMode">声音同步方式</string>
+	<string name="SoundSyncModeDesc">dual sync/async是通常选项，不会影响整体模拟速度。sync用来播放cg等，但是会稍微降低速度</string>
+    
+    <!-- Do not translate -->
+
+    
+</resources>
