@@ -12,5 +12,5 @@ include $(LOCAL_BUILD_PATH)/desmume_v7.mk
 endif
 
 include $(LOCAL_BUILD_PATH)/desmume_compat.mk
-include $(LOCAL_BUILD_PATH)/desmume/src/android/7z/7z.mk
+include $(LOCAL_BUILD_PATH)/desmume/src/mobile/7z/7z.mk
 

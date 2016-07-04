@@ -9,9 +9,9 @@ include $(CLEAR_VARS)
 
 LOCAL_MODULE    		:= 	libdesmumev7
 LOCAL_C_INCLUDES		:= 	$(LOCAL_PATH)/desmume/src \
-							$(LOCAL_PATH)/desmume/src/android \
-							$(LOCAL_PATH)/desmume/src/android/7z/CPP \
-							$(LOCAL_PATH)/desmume/src/android/7z/CPP/include_windows \
+							$(LOCAL_PATH)/desmume/src/mobile \
+							$(LOCAL_PATH)/desmume/src/mobile/7z/CPP \
+							$(LOCAL_PATH)/desmume/src/mobile/7z/CPP/include_windows \
 							$(LOCAL_PATH)/desmume/src/utils/lightning/include
 						   
 LOCAL_SRC_FILES			:= 	desmume/src/addons/slot1_none.cpp \
@@ -104,13 +104,13 @@ LOCAL_SRC_FILES			:= 	desmume/src/addons/slot1_none.cpp \
 							desmume/src/thumb_instructions.cpp \
 							desmume/src/version.cpp \
 							desmume/src/wifi.cpp \
-							desmume/src/android/mic.cpp \
-							desmume/src/android/throttle.cpp \
-							desmume/src/android/main.cpp \
-							desmume/src/android/OpenArchive.cpp \
-							desmume/src/android/7zip.cpp \
-							desmume/src/android/sndopensl.cpp \
-							desmume/src/android/draw.cpp 
+							desmume/src/mobile/mic.cpp \
+							desmume/src/mobile/throttle.cpp \
+							desmume/src/mobile/android.cpp \
+							desmume/src/mobile/OpenArchive.cpp \
+							desmume/src/mobile/7zip.cpp \
+							desmume/src/mobile/sndopensl.cpp \
+							desmume/src/mobile/draw.cpp 
 							
 LOCAL_ARM_NEON 			:= true
 LOCAL_ARM_MODE 			:= arm
