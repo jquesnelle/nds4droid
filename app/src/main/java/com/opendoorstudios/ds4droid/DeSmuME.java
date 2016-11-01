@@ -32,6 +32,8 @@ class DeSmuME {
 	static final int CPUTYPE_COMPAT =  0;
 	static final int CPUTYPE_V7 = 1;
 	static final int CPUTYPE_NEON = 2;
+	static final int CPUTYPE_A15 = 3;
+	static final int CPUTYPE_X86 = 4;
 	
 	static void load()
 	{
@@ -40,6 +42,10 @@ class DeSmuME {
 		System.loadLibrary("cpudetect");
 		final int cpuType = getCPUType();
 		switch(cpuType) {
+		case CPUTYPE_A15:
+			System.loadLibrary("desmumea15");
+			Log.i(MainActivity.TAG, "Using cortex-a15 native library");
+			break;
 		case CPUTYPE_NEON:
 			System.loadLibrary("desmumeneon");
 			Log.i(MainActivity.TAG, "Using NEON enhanced native library");
@@ -47,6 +53,10 @@ class DeSmuME {
 		case CPUTYPE_V7:
 			System.loadLibrary("desmumev7");
 			Log.i(MainActivity.TAG, "Using ARMv7 native library");
+			break;
+		case CPUTYPE_X86:
+			System.loadLibrary("desmumex86");
+			Log.i(MainActivity.TAG, "Using x86 native library");
 			break;
 		default:
 			System.loadLibrary("desmumecompat");
