@@ -50,10 +50,7 @@ jint JNI_NOARGS(getCPUType)
 	}
 	else if (cpuFamily == ANDROID_CPU_FAMILY_X86)
 	{
-		if ((cpuFeatures & ANDROID_CPU_X86_FEATURE_SSSE3) != 0)
-		{
-			return CPUTYPE_X86; // Check can be removed if ALL x86 feature SSE3
-		}
+		return CPUTYPE_X86;
 	}
     else
     {
