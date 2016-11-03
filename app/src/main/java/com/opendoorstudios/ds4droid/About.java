@@ -31,6 +31,8 @@ public class About extends Activity {
 		case DeSmuME.CPUTYPE_COMPAT: library = "compat"; break;
 		case DeSmuME.CPUTYPE_V7: library = "v7"; break;
 		case DeSmuME.CPUTYPE_NEON: library = "neon"; break;
+		case DeSmuME.CPUTYPE_A15: library = "a15"; break;
+		case DeSmuME.CPUTYPE_X86: library = "x86"; break;
 		default: library = "unknown";
 		}
 		

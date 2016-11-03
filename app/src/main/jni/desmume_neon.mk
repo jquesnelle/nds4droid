@@ -129,6 +129,5 @@ LOCAL_LDLIBS 			:= -llog -lz -lEGL -lGLESv2 -ljnigraphics -lOpenSLES -landroid
 
 include $(BUILD_SHARED_LIBRARY)
 
-include $(MY_LOCAL_PATH)/android-ndk-profiler/Android.mk
+#include $(MY_LOCAL_PATH)/android-ndk-profiler/Android.mk
 include $(MY_LOCAL_PATH)/desmume/src/android/math-neon/Android.mk
-

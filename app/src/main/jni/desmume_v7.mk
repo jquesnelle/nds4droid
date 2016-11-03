@@ -12,6 +12,7 @@ LOCAL_C_INCLUDES		:= 	$(LOCAL_PATH)/desmume/src \
 							$(LOCAL_PATH)/desmume/src/android \
 							$(LOCAL_PATH)/desmume/src/android/7z/CPP \
 							$(LOCAL_PATH)/desmume/src/android/7z/CPP/include_windows \
+							$(LOCAL_PATH)/desmume/src/android/7z/CPP/myWindows \
 							$(LOCAL_PATH)/desmume/src/utils/lightning/include
 						   
 LOCAL_SRC_FILES			:= 	desmume/src/addons/slot1_none.cpp \
@@ -118,9 +119,14 @@ LOCAL_CFLAGS			:= -DANDROID -DHAVE_LIBZ -DNO_MEMDEBUG -DNO_GPUDEBUG -DHAVE_JIT -
 LOCAL_STATIC_LIBRARIES 	:= sevenzip tinyccarm
 LOCAL_LDLIBS 			:= -llog -lz -lGLESv2 -lEGL -ljnigraphics -lOpenSLES -landroid 
 
+#For profiling
+#LOCAL_CFLAGS += -DUSE_PROFILER -pg
+#LOCAL_STATIC_LIBRARIES += android-ndk-profiler
+
 #To check for speed improvements
 #LOCAL_CFLAGS += -DMEASURE_FIRST_FRAMES
 
 include $(BUILD_SHARED_LIBRARY)
 
-
+#include $(MY_LOCAL_PATH)/android-ndk-profiler/Android.mk
+#include $(MY_LOCAL_PATH)/desmume/src/android/math-neon/Android.mk
