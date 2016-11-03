@@ -152,14 +152,14 @@ public class Cheats extends Activity {
 				}
 				
 			});
-			cheatEnabled.setTag(Integer.valueOf(position));
+			cheatEnabled.setTag(position);
 			
 			final android.widget.Button edit = (Button) convertView.findViewById(R.id.cheatEdit);
-			edit.setTag(Integer.valueOf(position));
+			edit.setTag(position);
 			edit.setEnabled(DeSmuME.getCheatType(position) == 1); //only support editing AR codes for now
 			
 			final android.widget.Button delete = (Button) convertView.findViewById(R.id.cheatDelete);
-			delete.setTag(Integer.valueOf(position));
+			delete.setTag(position);
 			
 			return convertView;
 		}

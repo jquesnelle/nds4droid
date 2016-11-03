@@ -24,7 +24,7 @@ import android.preference.PreferenceManager;
 import android.util.Log;
 
 class DeSmuME {
-	
+
 	public static Context context;
 	
 	static boolean loaded = false;
@@ -120,8 +120,8 @@ class DeSmuME {
 		catch(ClassCastException e) {
 		}
 		try {
-			Boolean ret = pm.getBoolean(name, def == 0 ? false : true);
-			return ret.booleanValue() ? 1 : 0;
+			Boolean ret = pm.getBoolean(name, def != 0);
+			return ret ? 1 : 0;
 		}
 		catch(ClassCastException e) {
 		}

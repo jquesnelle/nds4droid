@@ -19,7 +19,6 @@ along with the this software.  If not, see <http://www.gnu.org/licenses/>.
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.Map.Entry;
 
@@ -82,13 +81,11 @@ class Controls {
 		}
 		
 		//iterating over hashmaps is like 10x more complicated than it needs to be
-		final Iterator<Entry<Integer, LinkedList<Integer>>> it = buildKey.entrySet().iterator();
-		while(it.hasNext()) {
-			final Entry<Integer, LinkedList<Integer>> entry = it.next();
+		for(Entry<Integer, LinkedList<Integer>> entry : buildKey.entrySet()) {
 			final int[] thisKeysMappings = new int[entry.getValue().size()];
 			int counter = 0;
-			for(Integer mapping : entry.getValue()) 
-				thisKeysMappings[counter++] = mapping.intValue();
+			for(Integer mapping : entry.getValue())
+				thisKeysMappings[counter++] = mapping;
 			keyMappings.put(entry.getKey(), thisKeysMappings);
 		}
 

@@ -89,7 +89,7 @@ class EmulatorThread extends Thread {
 		}
 	}
 	
-	Object dormant = new Object();
+	final Object dormant = new Object();
 	
 	public Lock inFrameLock = new ReentrantLock();
 	int fps = 1;
@@ -147,19 +147,19 @@ class EmulatorThread extends Thread {
 				pendingRomLoad = null;
 			}
 			if(pending3DChange != null) {
-				DeSmuME.change3D(pending3DChange.intValue());
+				DeSmuME.change3D(pending3DChange);
 				pending3DChange = null;
 			}
 			if(pendingSoundChange != null) {
-				DeSmuME.changeSound(pendingSoundChange.intValue());
+				DeSmuME.changeSound(pendingSoundChange);
 				pendingSoundChange = null;
 			}
 			if(pendingCPUChange != null) {
-				DeSmuME.changeCpuMode(pendingCPUChange.intValue());
+				DeSmuME.changeCpuMode(pendingCPUChange);
 				pendingCPUChange = null;
 			}
 			if(pendingSoundSyncModeChange != null) {
-				DeSmuME.changeSoundSynchMode(pendingSoundSyncModeChange.intValue());
+				DeSmuME.changeSoundSynchMode(pendingSoundSyncModeChange);
 				pendingSoundSyncModeChange = null;
 			}
 			
@@ -174,7 +174,7 @@ class EmulatorThread extends Thread {
 				inFrameLock.lock();
 				do {
 					DeSmuME.runCore();
-				} while(DeSmuME.fastForwardMode); 
+				} while(DeSmuME.fastForwardMode);
 				inFrameLock.unlock();
 				frameFinished = true;
 

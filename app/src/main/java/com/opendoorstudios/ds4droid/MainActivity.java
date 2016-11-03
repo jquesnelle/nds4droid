@@ -478,7 +478,7 @@ public class MainActivity extends Activity implements OnSharedPreferenceChangeLi
 		cancelAutosave();
 		if(prefs.getBoolean(Settings.ENABLE_AUTOSAVE, true)) {
 			final int freqSel = Integer.valueOf(prefs.getString(Settings.AUTOSVAE_FREQUENCY, "1"));
-			long autosaveDelay = 0;
+			long autosaveDelay;
 			switch(freqSel) {
 			case 0: autosaveDelay = 1 * 60 * 1000; break; //1 minute
 			case 2: autosaveDelay = 15 * 60 * 1000; break; //15 minutes
