@@ -2,15 +2,17 @@
     package="com.opendoorstudios.ds4droid"
     android:versionCode="47"
     android:versionName="47"
-    android:installLocation="auto" >
+    android:installLocation="auto">
 
     <uses-sdk
-        android:minSdkVersion="10"
-        android:targetSdkVersion="10" />
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
     
-	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-	<uses-permission android:name="android.permission.RECORD_AUDIO"></uses-permission>
-	<uses-feature android:name="android.hardware.touchscreen" android:required="false"/> 
+	<uses-permission
+		android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+		android:maxSdkVersion="18" />
+	<uses-permission android:name="android.permission.RECORD_AUDIO" />
+	<uses-feature android:name="android.hardware.touchscreen" android:required="false" />
 		    
     <application
         android:icon="@drawable/ic_launcher"
@@ -39,25 +41,21 @@
 		<activity
 			android:name="com.opendoorstudios.ds4droid.NDSScanner.CollectionActivity"
 			android:label="@string/app_name" >
-			
 			<intent-filter>
                 <action android:name="android.intent.action.PICK"/>
                 <category android:name="android.intent.category.DEFAULT"/>
 			</intent-filter>
 		</activity>
         
-        <activity android:name=".Settings">
-        </activity>
+        <activity android:name=".Settings" />
         
-        <activity android:name=".ButtonLayoutEditor">
-        </activity>
+        <activity android:name=".ButtonLayoutEditor" />
         
-        <activity android:name=".KeyMapSettings"/>
+        <activity android:name=".KeyMapSettings" />
         
-        <activity android:name=".Cheats"/>
+        <activity android:name=".Cheats" />
         
         <activity android:name=".About" />
         
     </application>
-
 </manifest>

@@ -123,4 +123,3 @@ LOCAL_LDLIBS 			:= -llog -lz -lGLESv2 -lEGL -ljnigraphics -lOpenSLES -landroid
 
 include $(BUILD_SHARED_LIBRARY)
 
-

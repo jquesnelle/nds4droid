@@ -17,35 +17,28 @@ public class About extends Activity {
 		
 		final StringBuilder build = new StringBuilder();
 		
-		String family, library;
+		String library;
 		
 		DeSmuME.load();
 		
-		switch(DeSmuME.getCPUFamily()) {
-		case 1: family = "ARM"; break;
-		case 2: family = "x86"; break;
-		default: family = "unknown"; break;
-		}
-		
 		switch(DeSmuME.getCPUType()) {
-		case DeSmuME.CPUTYPE_COMPAT: library = "compat"; break;
 		case DeSmuME.CPUTYPE_V7: library = "v7"; break;
 		case DeSmuME.CPUTYPE_NEON: library = "neon"; break;
+		case DeSmuME.CPUTYPE_X86: library = "x86"; break;
 		default: library = "unknown";
 		}
 		
 		String version = null;
 		try {
 			version = getPackageManager().getPackageInfo(getPackageName(), 0).versionName;
-		} catch (NameNotFoundException e) {
+		} catch (Exception e) {
 			// TODO Auto-generated catch block
+			version = "unknown";
 			e.printStackTrace();
 		}
-		if(version == null)
-			version = "unknown";
-		
+	
 		build.append(getString(R.string.app_name)).append(" ").append(version).append(
-						" ").append(family).append("/").append(library);
+						"/").append(library);
 		
 		textVersion.setText(build.toString());
 	}
