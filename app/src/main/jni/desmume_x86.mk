@@ -114,7 +114,7 @@ LOCAL_SRC_FILES			:= 	desmume/src/addons/slot1_none.cpp \
 
 LOCAL_ARM_NEON 			:= false						
 LOCAL_ARM_MODE 			:= thumb
-LOCAL_CFLAGS			:= -DANDROID -DHAVE_LIBZ -DNO_MEMDEBUG -DNO_GPUDEBUG -DHAVE_JIT -DLIGHTNING_I386 -march=i686 -mtune=intel -mssse3 -mfpmath=sse -m32
+LOCAL_CFLAGS			:= -DANDROID -DHAVE_LIBZ -DNO_MEMDEBUG -DNO_GPUDEBUG -DHAVE_JIT -DLIGHTNING_I386 -march=i686 -mtune=intel -mssse3 -mfpmath=sse -m32 -fno-branch-count-reg
 LOCAL_STATIC_LIBRARIES 	:= sevenzip
 LOCAL_LDLIBS 			:= -llog -lz -lGLESv2 -lEGL -ljnigraphics -lOpenSLES -landroid
 
