@@ -122,4 +122,5 @@ LOCAL_LDLIBS 			:= -llog -lz -lGLESv2 -lEGL -ljnigraphics -lOpenSLES -landroid
 #LOCAL_CFLAGS += -DMEASURE_FIRST_FRAMES
 
 include $(BUILD_SHARED_LIBRARY)
+include $(LOCAL_BUILD_PATH)/desmume/src/utils/tinycc/Android_arm.mk
 
