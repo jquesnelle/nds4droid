@@ -43,6 +43,8 @@
 #  define __GNU_SOURCE_NOT_DEFINED	1
 #endif
 #include <string.h>
+#include <strings.h>
+
 #if __GNU_SOURCE_NOT_DEFINED
 #  undef __GNU_SOURCE
 #endif
