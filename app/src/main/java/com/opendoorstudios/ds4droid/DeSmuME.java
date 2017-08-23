@@ -50,8 +50,8 @@ class DeSmuME {
 				Log.i(MainActivity.TAG, "Using ARMv7-A library with NEON");
 				break;
 			case CPUTYPE_X86:
-				//System.loadLibrary("desmumex86");
-				//Log.i(MainActivity.TAG, "Using x86 native library");
+				System.loadLibrary("desmumex86");
+				Log.i(MainActivity.TAG, "Using x86 native library");
 				break;
 			case CPUTYPE_ARM64:
 				System.loadLibrary("desmumearm64");
