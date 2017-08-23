@@ -43,7 +43,7 @@ jint JNI_NOARGS(getCPUType)
 			return CPUTYPE_V7;
 		}
 	}
-	else if (cpuFamily == ANDROID_CPU_FAMILY_X86)
+	else if (cpuFamily == ANDROID_CPU_FAMILY_X86 || cpuFamily == ANDROID_CPU_FAMILY_X86_64)
 	{
 		return CPUTYPE_X86;
 	}
@@ -53,7 +53,7 @@ jint JNI_NOARGS(getCPUType)
     }
 	else
 	{
-		return CPUTYPE_V7; // There is absolutely no circumstance where this should occur, but fall back to V7
+		return CPUTYPE_V7; //
 	}
 }
 
