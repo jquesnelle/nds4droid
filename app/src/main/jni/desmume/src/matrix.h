@@ -325,8 +325,8 @@ static FORCEINLINE void memset_u8(void* _dst, u8 val)
 	//const __m128i temp = _mm_set_epi32(u32val,u32val,u32val,u32val);
 	//MACRODO_N(NUM/16,_mm_store_si128((__m128i*)(dst+(X)*16), temp));
 }
-
-#elif defined(HAVE_NEON)
+// The "defined(__arm__)" is to prevent arm64 errors, as arm64 does not need this.
+#elif defined(HAVE_NEON) && defined(__arm__)
 
 FORCEINLINE void MatrixMultVec4x4(float *matrix, float *vecPtr)
 {
