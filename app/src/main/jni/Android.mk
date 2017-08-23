@@ -15,5 +15,9 @@ ifeq ($(TARGET_ARCH_ABI),x86)
 include $(LOCAL_BUILD_PATH)/desmume_x86.mk
 endif
 
+ifeq ($(TARGET_ARCH_ABI),arm64-v8a)
+include $(LOCAL_BUILD_PATH)/desmume_arm64.mk
+endif
+
 include $(LOCAL_BUILD_PATH)/desmume/src/android/7z/7z.mk
 
