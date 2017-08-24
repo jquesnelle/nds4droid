@@ -648,7 +648,7 @@ void JNI_NOARGS(loadSettings)
 
 void JNI(init, jobject _inst)
 {
-#ifdef HAVE_NEON
+#if defined(__arm__) && defined(HAVE_NEON)
 	//neontest();
 	enable_runfast();
 #endif

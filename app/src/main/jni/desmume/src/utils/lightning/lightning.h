@@ -110,7 +110,7 @@ struct {
      * logic not dependent on patched value in jit_prolog */
     _ui		push_pop	: 1;
 } jit_flags;
-#elif !defined(__mips__) && !defined(__arm__)
+#elif !defined(__mips__) && !defined(__arm__) && !defined(__aarch64__)
 #  define	jit_gpr_t	int
 #  define	jit_fpr_t	int
 #endif
@@ -193,7 +193,7 @@ struct {
     _ui		mul		: 1;
     _ui		mips64		: 1;
 } jit_cpu;
-#elif defined(__arm__)
+#elif defined(__arm__) || defined(__aarch64__)
 struct jit_local_state {
     int		 reglist;
     int		 framesize;

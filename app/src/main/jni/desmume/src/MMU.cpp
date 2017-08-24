@@ -49,22 +49,22 @@
 #define FLOATING_SQRT
 
 #ifdef HAVE_NEON
+#if defined(__arm__)
 #include "android/math-neon/math_neon.h"
 #endif
-
+#endif
 //http://home.utah.edu/~nahaj/factoring/isqrt.c.html
 static u64 isqrt (u64 x) {
   
 
    if (x<1) return 0;
 
-#ifdef FLOATING_SQRT
-	#ifdef HAVE_NEON
+#if defined(FLOATING_SQRT)
+    #if defined(HAVE_NEON) && defined(__arm__)
 		return sqrtf_neon_sfp(x);
-	#else
-	   return sqrt((double)x);
-	#endif
-   
+    #else
+        return sqrt((double)x);
+    #endif
 #else
   u64   squaredbit, remainder, root;
    /* Load the binary constant 01 00 00 ... 00, where the number
