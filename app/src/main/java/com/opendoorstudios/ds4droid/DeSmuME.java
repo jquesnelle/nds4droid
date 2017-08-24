@@ -54,7 +54,8 @@ class DeSmuME {
 				Log.i(MainActivity.TAG, "Using x86 native library");
 				break;
 			case CPUTYPE_ARM64:
-				System.loadLibrary("desmumearm64");
+				// There is a problem with Lightning JIT on 64-bit devices that causes the app to hang.
+				System.loadLibrary("desmumeneon");
 				Log.i(MainActivity.TAG, "Using ARMv8-A (ARM64) library");
 				break;
 			default:
