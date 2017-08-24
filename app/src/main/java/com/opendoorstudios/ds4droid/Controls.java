@@ -59,7 +59,7 @@ class Controls {
 	//Button fastForwardButton;
 	Button optionsButton;
 	
-	final SparseArray<int[]> keyMappings = new SparseArray<int[]>();
+	final SparseArray<int[]> keyMappings = new SparseArray<>();
 	
 	public static final int[] KEYS_WITH_MAPPINGS = new int[] { Button.BUTTON_UP, Button.BUTTON_DOWN, Button.BUTTON_LEFT, Button.BUTTON_RIGHT,
 			Button.BUTTON_A, Button.BUTTON_B, Button.BUTTON_X, Button.BUTTON_Y, Button.BUTTON_START, Button.BUTTON_SELECT,
@@ -68,7 +68,7 @@ class Controls {
 	void loadMappings(Context context) {
 		keyMappings.clear();
 		
-		final HashMap<Integer, LinkedList<Integer>> buildKey = new HashMap<Integer, LinkedList<Integer>>();
+		final HashMap<Integer, LinkedList<Integer>> buildKey = new HashMap<>();
 		
 		final SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
 		for(int id : KEYS_WITH_MAPPINGS) {
@@ -198,10 +198,10 @@ class Controls {
 	final int[] buttonStates = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 	
 	//This map goes from pointer id (from the android os) to the different buttons we have
-	final SparseArray<Button> activeTouches = new SparseArray<Button>(); 
+	final SparseArray<Button> activeTouches = new SparseArray<>();
 	
-	final ArrayList<Button> buttonsToDraw = new ArrayList<Button>();
-	final ArrayList<Button> buttonsToProcess = new ArrayList<Button>();
+	final ArrayList<Button> buttonsToDraw = new ArrayList<>();
+	final ArrayList<Button> buttonsToProcess = new ArrayList<>();
 	
 	boolean touchScreenProcess(MotionEvent event) {
 		switch(event.getAction()) {
