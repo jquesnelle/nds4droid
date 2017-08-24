@@ -61,7 +61,7 @@ public class KeyMapPreference extends DialogPreference implements OnKeyListener 
 		RelativeLayout layout = (RelativeLayout)inflater.inflate(R.layout.keymap, null);
 		layout.setOnKeyListener(this);
 		layout.requestFocus();
-		currentValueDesc = layout.findViewById(R.id.keymap_value);
+		currentValueDesc = (TextView) layout.findViewById(R.id.keymap_value);
 		sync();
 		
 		return layout;

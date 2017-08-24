@@ -97,7 +97,7 @@ public class FileDialog extends ListActivity {
 		setResult(RESULT_CANCELED, getIntent());
 
 		setContentView(R.layout.file_dialog_main);
-		myPath = findViewById(R.id.path);
+		myPath = (TextView) findViewById(R.id.path);
 
 
 		selectionMode = getIntent().getIntExtra(SELECTION_MODE, SelectionMode.MODE_CREATE);

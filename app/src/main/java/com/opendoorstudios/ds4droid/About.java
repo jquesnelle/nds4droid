@@ -13,7 +13,7 @@ public class About extends Activity {
 		
 		setContentView(R.layout.about);
 		
-		final TextView textVersion = findViewById(R.id.about_versionstring);
+		final TextView textVersion = (TextView)findViewById(R.id.about_versionstring);
 		
 		final StringBuilder build = new StringBuilder();
 		
