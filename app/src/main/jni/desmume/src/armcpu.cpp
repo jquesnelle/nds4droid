@@ -503,22 +503,21 @@ void armcpu_setjitmode(int jitmode)
 
 	switch (jitmode)
 	{
-	case 0:
-		arm_cpubase = NULL;
-		break;
+		case 0:
+			arm_cpubase = NULL;
+			break;
 
-	case 1:
-		arm_cpubase = &arm_threadedinterpreter;
-		break;
-
-	case 2:
-		arm_cpubase = &arm_ljit;
-		break;
-
-#if 0 //(__i386__) || defined(__x86_64__) || defined(_M_IX86) || defined(_M_X64)
-	case 3:
-		arm_cpubase = &arm_oldjit;
-		break;
+		case 1:
+			arm_cpubase = &arm_threadedinterpreter;
+			break;
+#if defined(__arm__) || defined(__aarch64__)
+		case 2:
+			arm_cpubase = &arm_ljit;
+			break;
+#else
+		case 2:
+			arm_cpubase = &arm_oldjit;
+			break;
 #endif
 
 	default:

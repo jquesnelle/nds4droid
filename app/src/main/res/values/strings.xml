@@ -152,7 +152,7 @@
 	
 	<!-- Release 29 -->
 	<string name="JitSize">JIT block size</string>
-	<string name="JitSizeDesc">For the threaded interpreter/tinycc JIT execution engines, how big each JIT block should be. 1 is most accurate, while 100 is fastest</string>
+	<string name="JitSizeDesc">For the JIT compiler engine, how big each JIT block should be. 1 is most accurate, while 100 is fastest</string>
 	<string name="about1">nds4droid is a free, open source Nintendo DS emulator.</string>
 	<string name="about2">nds4droid is the result of countless hours of work by dozens of contributors. The emulation core used by nds4droid is DeSmuME.</string>
 	<string name="about3">Jeffrey Quesnelle is the primary developer of nds4droid. nds4droid is a product of Sterling Heights, Michigan, United States of America.</string>
@@ -262,8 +262,8 @@
     </string-array>
     <string-array name="executionengines">
         <item>Interpreter</item>
-        <item>Threaded interpreter</item>
-        <item>lightning JIT</item>
+        <item>Threaded Interpreter</item>
+        <item>JIT Recompiler</item>
     </string-array>
     <string-array name="zerothroughthree">
         <item>0</item>
