@@ -88,7 +88,7 @@ public class FileDialog extends ListActivity {
 	private boolean canSelectDir = false;
 
 	private File selectedFile;
-	private HashMap<String, Integer> lastPositions = new HashMap<String, Integer>();
+	private HashMap<String, Integer> lastPositions = new HashMap<>();
 
 
 	@Override
@@ -135,9 +135,9 @@ public class FileDialog extends ListActivity {
 
 		currentPath = dirPath;
 
-		final List<String> item = new ArrayList<String>();
-		path = new ArrayList<String>();
-		mList = new ArrayList<HashMap<String, Object>>();
+		final List<String> item = new ArrayList<>();
+		path = new ArrayList<>();
+		mList = new ArrayList<>();
 
 		File f = new File(currentPath);
 		File[] files = f.listFiles();
@@ -173,10 +173,10 @@ public class FileDialog extends ListActivity {
 
 		}
 
-		TreeMap<String, String> dirsMap = new TreeMap<String, String>();
-		TreeMap<String, String> dirsPathMap = new TreeMap<String, String>();
-		TreeMap<String, String> filesMap = new TreeMap<String, String>();
-		TreeMap<String, String> filesPathMap = new TreeMap<String, String>();
+		TreeMap<String, String> dirsMap = new TreeMap<>();
+		TreeMap<String, String> dirsPathMap = new TreeMap<>();
+		TreeMap<String, String> filesMap = new TreeMap<>();
+		TreeMap<String, String> filesPathMap = new TreeMap<>();
 		for (File file : files) {
 			if (file.isDirectory()) {
 				String dirName = file.getName();
@@ -188,8 +188,9 @@ public class FileDialog extends ListActivity {
 				
 				if (formatFilter != null) {
 					boolean contains = false;
-					for (int i = 0; i < formatFilter.length; i++) {
-						final String formatLwr = formatFilter[i].toLowerCase();
+					// for (int i = 0; i < formatFilter.length; i++) {
+					for (String aFormatFilter : formatFilter) {
+						final String formatLwr = aFormatFilter.toLowerCase();
 						if (fileNameLwr.endsWith(formatLwr)) {
 							contains = true;
 							break;

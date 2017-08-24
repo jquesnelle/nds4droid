@@ -51,7 +51,7 @@ public class CollectionActivity extends Activity implements GridView.OnItemClick
 		browserRoot = getIntent().getStringExtra(FileDialog.START_PATH);
 
 		setContentView( R.layout.fragment_list );
-		grid = (GridView)findViewById( R.id.list );
+		grid = (GridView) findViewById( R.id.list );
 		adapter = new RomAdapter();
 		grid.setAdapter( adapter );
 		grid.setOnItemClickListener( this );
@@ -170,7 +170,7 @@ public class CollectionActivity extends Activity implements GridView.OnItemClick
 				view = getLayoutInflater().inflate( R.layout.griditem_rom, parent, false );
 			}
 			
-			final ImageView image_view = ( (ImageView)view.findViewById( R.id.icon ));
+			final ImageView image_view = (ImageView) view.findViewById( R.id.icon );
 			if ( rom.isIconLoaded() ) {
 				image_view.setImageBitmap( rom.getIcon() );
 				image_view.getDrawable().setFilterBitmap( false );

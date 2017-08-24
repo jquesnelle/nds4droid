@@ -25,13 +25,14 @@ public class About extends Activity {
 		case DeSmuME.CPUTYPE_V7: library = "v7"; break;
 		case DeSmuME.CPUTYPE_NEON: library = "neon"; break;
 		case DeSmuME.CPUTYPE_X86: library = "x86"; break;
+		case DeSmuME.CPUTYPE_ARM64: library = "arm64"; break;
 		default: library = "unknown";
 		}
 		
-		String version = null;
+		String version;
 		try {
 			version = getPackageManager().getPackageInfo(getPackageName(), 0).versionName;
-		} catch (Exception e) {
+		} catch (NameNotFoundException e) {
 			// TODO Auto-generated catch block
 			version = "unknown";
 			e.printStackTrace();

@@ -45,7 +45,7 @@ public class ButtonLayoutEditor extends Activity {
 		}
 	}
 	
-	static class Editing {
+	private static class Editing {
 		Editing(Button button) {
 			this.button = button;
 			sourceBitmapRect = new Rect(0, 0, button.bitmap.getWidth(), button.bitmap.getHeight());
@@ -114,7 +114,7 @@ public class ButtonLayoutEditor extends Activity {
 			
 		}
 		
-		final ArrayList<Editing> buttons = new ArrayList<Editing>();
+		final ArrayList<Editing> buttons = new ArrayList<>();
 		boolean landscape;
 		
 		@Override
@@ -158,7 +158,7 @@ public class ButtonLayoutEditor extends Activity {
 		}
 		
 		
-		final HashMap<Integer, Editing> editing = new HashMap<Integer, Editing>();
+		final HashMap<Integer, Editing> editing = new HashMap<>();
 		Editing scaling = null;
 		boolean handledScaleEvent = false;
 		

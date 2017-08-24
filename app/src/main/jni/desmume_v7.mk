@@ -115,12 +115,11 @@ LOCAL_SRC_FILES			:= 	desmume/src/addons/slot1_none.cpp \
 LOCAL_ARM_NEON 			:= false
 LOCAL_ARM_MODE 			:= arm
 LOCAL_CFLAGS			:= -DANDROID -DHAVE_LIBZ -DNO_MEMDEBUG -DNO_GPUDEBUG -DHAVE_JIT -DLIGHTNING_ARM -mfloat-abi=softfp -mfpu=vfpv3-d16 -marm -march=armv7-a
-LOCAL_STATIC_LIBRARIES 	:= sevenzip tinyccarm
+LOCAL_STATIC_LIBRARIES 	:= sevenzip
 LOCAL_LDLIBS 			:= -llog -lz -lGLESv2 -lEGL -ljnigraphics -lOpenSLES -landroid 
 
 #To check for speed improvements
 #LOCAL_CFLAGS += -DMEASURE_FIRST_FRAMES
 
 include $(BUILD_SHARED_LIBRARY)
-include $(LOCAL_BUILD_PATH)/desmume/src/utils/tinycc/Android_arm.mk
 

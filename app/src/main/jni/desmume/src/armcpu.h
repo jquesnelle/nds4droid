@@ -355,7 +355,7 @@ static INLINE char *decodeIntruction(bool thumb_mode, u32 instr)
 {
 	char txt[20] = {0};
 	u32 tmp = 0;
-	if (thumb_mode == true)
+	if (thumb_mode)
 	{
 		tmp = (instr >> 6);
 		strcpy(txt, intToBin((u16)tmp)+6);
