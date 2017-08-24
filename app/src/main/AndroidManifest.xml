@@ -2,8 +2,7 @@
     package="com.opendoorstudios.ds4droid">
     
 	<uses-permission
-		android:name="android.permission.WRITE_EXTERNAL_STORAGE"
-		android:maxSdkVersion="18" />
+		android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 	<uses-permission android:name="android.permission.RECORD_AUDIO" />
 	<uses-feature android:name="android.hardware.touchscreen" android:required="false" />
 		    
