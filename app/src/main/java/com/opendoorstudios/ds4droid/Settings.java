@@ -223,7 +223,7 @@ public class Settings extends PreferenceActivity {
 			if(prefs.contains(CPU_MODE)) {
 				//the new default cpu engine in 35 is "lightning jit"
 				if(currentInstall <= 34)
-					editor.putString(CPU_MODE, "1");
+					editor.putString(CPU_MODE, "0");
 			}
 		}
 		
