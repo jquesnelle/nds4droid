@@ -1,14 +1,6 @@
 apply plugin: 'com.android.application'
 
 android {
-    signingConfigs {
-        Default {
-            keyAlias 'tangalbert919'
-            keyPassword 'nds4droid'
-            storeFile file('D:/nds4droid.jks')
-            storePassword 'Ohno7613445'
-        }
-    }
     compileSdkVersion 23
     buildToolsVersion "26.0.1"
     defaultConfig {
