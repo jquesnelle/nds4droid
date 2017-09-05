@@ -33,7 +33,7 @@
 #include "../debug.h"
 #include "../NDSSystem.h"
 #include "../path.h"
-#include "../GPU_OSD.h"
+#include "../GPU_osd.h"
 #include "../addons.h"
 #include "../slot1.h"
 #include "../saves.h"
