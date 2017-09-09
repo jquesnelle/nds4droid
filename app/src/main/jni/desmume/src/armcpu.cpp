@@ -510,13 +510,12 @@ void armcpu_setjitmode(int jitmode)
 	case 1:
 		arm_cpubase = &arm_threadedinterpreter;
 		break;
-
+#if defined(__arm__) || defined(__aarch64__)
 	case 2:
 		arm_cpubase = &arm_ljit;
 		break;
-
-#if 0 //(__i386__) || defined(__x86_64__) || defined(_M_IX86) || defined(_M_X64)
-	case 3:
+#else
+	case 2:
 		arm_cpubase = &arm_oldjit;
 		break;
 #endif
