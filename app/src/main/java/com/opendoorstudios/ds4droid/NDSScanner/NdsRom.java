@@ -41,7 +41,9 @@ public class NdsRom {
 
 	static final String ROM_PATTERN = "^.*\\.(NDS|nds)$",
 	                    ZIP_PATTERN = "^.*\\.(ZIP|zip)$",
-	                    RAR_PATTERN = "^.*\\.(RAR|rar)$";
+	                    RAR_PATTERN = "^.*\\.(RAR|rar)$",
+						// We need to add 7-zip support ASAP.
+						SEVENZ_PATTERN = "^.*\\.(7Z|7z)$";
 	
 	private final File FILE;
 	

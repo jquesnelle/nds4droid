@@ -12,7 +12,6 @@ LOCAL_C_INCLUDES		:= 	$(LOCAL_PATH)/desmume/src \
 							$(LOCAL_PATH)/desmume/src/android \
 							$(LOCAL_PATH)/desmume/src/android/7z/CPP \
 							$(LOCAL_PATH)/desmume/src/android/7z/CPP/include_windows \
-							$(LOCAL_PATH)/desmume/src/android/7z/CPP/myWindows \
 							$(LOCAL_PATH)/desmume/src/utils/lightning/include
 						   
 LOCAL_SRC_FILES			:= 	desmume/src/addons/slot1_none.cpp \
@@ -116,19 +115,16 @@ LOCAL_SRC_FILES			:= 	desmume/src/addons/slot1_none.cpp \
 							
 LOCAL_ARM_NEON 			:= true
 LOCAL_ARM_MODE 			:= arm
-LOCAL_CFLAGS			:= -DANDROID -DHAVE_LIBZ -DNO_MEMDEBUG -DNO_GPUDEBUG -DHAVE_JIT -DLIGHTNING_ARM -DHAVE_NEON=1 -mfloat-abi=softfp -mfpu=neon -marm -march=armv7-a -mtune=cortex-a9
+LOCAL_CFLAGS			:= -DANDROID -DHAVE_LIBZ -DNO_MEMDEBUG -DNO_GPUDEBUG -DHAVE_JIT -DLIGHTNING_ARM -DHAVE_NEON=1 -mfloat-abi=softfp -mfpu=neon -marm -march=armv7-a -mtune=cortex-a7
+#To increase performance for the Qualcomm Krait CPU
+#LOCAL_CFLAGS            := -DANDROID -DHAVE-LIBZ -DNO_MEMDEBUG -DNO_GPUDEBUG -DHAVE-JIT -DLIGHTNING_ARM -DHAVE_NEON=1 -mfloat-abi=softfp -mfpu=neon-vfpv4 -marm -march=armv7-a -mcpu=krait2
 LOCAL_STATIC_LIBRARIES 	:= mathneon sevenzip
 LOCAL_LDLIBS 			:= -llog -lz -lEGL -lGLESv2 -ljnigraphics -lOpenSLES -landroid
-
-#For profiling
-#LOCAL_CFLAGS += -DUSE_PROFILER -pg
-#LOCAL_STATIC_LIBRARIES += android-ndk-profiler
 
 #To check for speed improvements
 #LOCAL_CFLAGS += -DMEASURE_FIRST_FRAMES
 
 include $(BUILD_SHARED_LIBRARY)
-
-include $(MY_LOCAL_PATH)/android-ndk-profiler/Android.mk
+#This is only needed for armeabi-v7a.
 include $(MY_LOCAL_PATH)/desmume/src/android/math-neon/Android.mk
 

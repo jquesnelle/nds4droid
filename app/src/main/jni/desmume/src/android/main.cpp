@@ -33,7 +33,7 @@
 #include "../debug.h"
 #include "../NDSSystem.h"
 #include "../path.h"
-#include "../GPU_OSD.h"
+#include "../GPU_osd.h"
 #include "../addons.h"
 #include "../slot1.h"
 #include "../saves.h"
@@ -619,7 +619,7 @@ void loadSettings(JNIEnv* env)
 	snd_synchmethod = GetPrivateProfileInt(env, "Sound","SynchMethod",0,IniName);
 
 	CommonSettings.advanced_timing = GetPrivateProfileBool(env,"Emulation", "AdvancedTiming", false, IniName);
-	CommonSettings.CpuMode = GetPrivateProfileInt(env, "Emulation","CpuMode", 2, IniName);
+	CommonSettings.CpuMode = GetPrivateProfileInt(env, "Emulation","CpuMode", 0, IniName);
 	CommonSettings.jit_max_block_size = GetPrivateProfileInt(env, "Emulation", "JitSize", 10, IniName);
 	
 	CommonSettings.GFX3D_Zelda_Shadow_Depth_Hack = GetPrivateProfileInt(env,"3D", "ZeldaShadowDepthHack", 0, IniName);
@@ -648,7 +648,7 @@ void JNI_NOARGS(loadSettings)
 
 void JNI(init, jobject _inst)
 {
-#ifdef HAVE_NEON
+#if defined(__arm__) && defined(HAVE_NEON)
 	//neontest();
 	enable_runfast();
 #endif

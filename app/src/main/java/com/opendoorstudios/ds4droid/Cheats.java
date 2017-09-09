@@ -31,7 +31,7 @@ public class Cheats extends Activity {
 		cheatList = (ListView) findViewById(R.id.cheatList);
 		cheatList.setAdapter(adapter = new CheatAdapter());
 		
-		final android.widget.Button addButton = (android.widget.Button)findViewById(R.id.addcheat);
+		final android.widget.Button addButton = (Button) findViewById(R.id.addcheat);
 		addButton.setOnClickListener(new android.view.View.OnClickListener() {
 			
 			@Override
@@ -76,8 +76,8 @@ public class Cheats extends Activity {
 			
 		}).setView(cheatEditView = inflater.inflate(R.layout.cheatedit, null)).create();
 		
-		editingDescription = (TextView) cheatEditView.findViewById(R.id.cheatDesc);
-		editingCode = (TextView) cheatEditView.findViewById(R.id.cheatCode);
+		editingDescription = (TextView)cheatEditView.findViewById(R.id.cheatDesc);
+		editingCode = (TextView)cheatEditView.findViewById(R.id.cheatCode);
 		
 		if(currentlyEditing != -1) {
 			
@@ -108,8 +108,8 @@ public class Cheats extends Activity {
 		public View getView(int position, View convertView, ViewGroup parent) {
 			if(convertView == null) {
 				convertView = inflater.inflate(R.layout.cheatrow, null);
-				final android.widget.Button edit = (Button) convertView.findViewById(R.id.cheatEdit);
-				final android.widget.Button delete = (Button) convertView.findViewById(R.id.cheatDelete);
+				final android.widget.Button edit = (Button)convertView.findViewById(R.id.cheatEdit);
+				final android.widget.Button delete = (Button)convertView.findViewById(R.id.cheatDelete);
 				edit.setOnClickListener(new android.view.View.OnClickListener() {
 
 					@Override
@@ -135,7 +135,7 @@ public class Cheats extends Activity {
 				});
 			}
 			
-			final CheckBox cheatEnabled = (CheckBox) convertView.findViewById(R.id.cheatEnabled);
+			final CheckBox cheatEnabled = (CheckBox)convertView.findViewById(R.id.cheatEnabled);
 			cheatEnabled.setText(DeSmuME.getCheatName(position));
 			editingCheckedState = true;
 			cheatEnabled.setChecked(DeSmuME.getCheatEnabled(position));
@@ -152,14 +152,14 @@ public class Cheats extends Activity {
 				}
 				
 			});
-			cheatEnabled.setTag(Integer.valueOf(position));
+			cheatEnabled.setTag(position);
 			
-			final android.widget.Button edit = (Button) convertView.findViewById(R.id.cheatEdit);
-			edit.setTag(Integer.valueOf(position));
+			final android.widget.Button edit = (Button)convertView.findViewById(R.id.cheatEdit);
+			edit.setTag(position);
 			edit.setEnabled(DeSmuME.getCheatType(position) == 1); //only support editing AR codes for now
 			
-			final android.widget.Button delete = (Button) convertView.findViewById(R.id.cheatDelete);
-			delete.setTag(Integer.valueOf(position));
+			final android.widget.Button delete = (Button)convertView.findViewById(R.id.cheatDelete);
+			delete.setTag(position);
 			
 			return convertView;
 		}

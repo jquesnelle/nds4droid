@@ -24,14 +24,15 @@ import android.preference.PreferenceManager;
 import android.util.Log;
 
 class DeSmuME {
-	
+
 	public static Context context;
 	
 	static boolean loaded = false;
 	
-	static final int CPUTYPE_COMPAT =  0;
-	static final int CPUTYPE_V7 = 1;
-	static final int CPUTYPE_NEON = 2;
+	static final int CPUTYPE_V7 = 0;
+	static final int CPUTYPE_NEON = 1;
+	static final int CPUTYPE_X86 = 2;
+	static final int CPUTYPE_ARM64 = 3;
 	
 	static void load()
 	{
@@ -40,24 +41,33 @@ class DeSmuME {
 		System.loadLibrary("cpudetect");
 		final int cpuType = getCPUType();
 		switch(cpuType) {
-		case CPUTYPE_NEON:
-			System.loadLibrary("desmumeneon");
-			Log.i(MainActivity.TAG, "Using NEON enhanced native library");
-			break;
-		case CPUTYPE_V7:
-			System.loadLibrary("desmumev7");
-			Log.i(MainActivity.TAG, "Using ARMv7 native library");
-			break;
-		default:
-			System.loadLibrary("desmumecompat");
-			Log.i(MainActivity.TAG, "Using compatibility native library");
-			break;
+			case CPUTYPE_V7:
+				System.loadLibrary("desmumev7");
+				Log.i(MainActivity.TAG, "Using old ARMv7-A library");
+				break;
+			case CPUTYPE_NEON:
+				System.loadLibrary("desmumeneon");
+				Log.i(MainActivity.TAG, "Using ARMv7-A library with NEON");
+				break;
+			case CPUTYPE_X86:
+				System.loadLibrary("desmumex86");
+				Log.i(MainActivity.TAG, "Using x86 native library");
+				break;
+			case CPUTYPE_ARM64:
+				// There is a problem with Lightning JIT on 64-bit devices that causes the app to hang.
+				// The NEON shared library can't be found for whatever reason.
+				System.loadLibrary("desmumearm64");
+				Log.i(MainActivity.TAG, "Using ARMv8-A (ARM64) library");
+				break;
+			default:
+				System.loadLibrary("desmumev7");
+				Log.i(MainActivity.TAG, "Unable to detect - old ARMv7 library selected");
+				break;
 		}
 		loaded = true;
 	}
 	
 	static native int getCPUType();
-	static native int getCPUFamily();
 	static native void init();
 	static native void runCore();
 	static native void resize(Bitmap bitmap);
@@ -117,8 +127,8 @@ class DeSmuME {
 		catch(ClassCastException e) {
 		}
 		try {
-			Boolean ret = pm.getBoolean(name, def == 0 ? false : true);
-			return ret.booleanValue() ? 1 : 0;
+			Boolean ret = pm.getBoolean(name, def != 0);
+			return ret ? 1 : 0;
 		}
 		catch(ClassCastException e) {
 		}
