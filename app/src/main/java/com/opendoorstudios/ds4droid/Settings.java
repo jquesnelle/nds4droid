@@ -223,7 +223,7 @@ public class Settings extends PreferenceActivity {
 			if(prefs.contains(CPU_MODE)) {
 				//the new default cpu engine in 35 is "lightning jit"
 				if(currentInstall <= 34)
-					editor.putString(CPU_MODE, "2");
+					editor.putString(CPU_MODE, "0");
 			}
 		}
 		
@@ -256,7 +256,7 @@ public class Settings extends PreferenceActivity {
 		if(!prefs.contains(LAST_ROM_DIR))
 			editor.putString(LAST_ROM_DIR, Environment.getExternalStorageDirectory().getPath() );
 		if(!prefs.contains(CPU_MODE))
-			editor.putString(CPU_MODE, "2");
+			editor.putString(CPU_MODE, "0");
 		if(!prefs.contains(SOUND_SYNC_MODE))
 			editor.putString(SOUND_SYNC_MODE, "0");
 		if(!prefs.contains(ENABLE_FOG))

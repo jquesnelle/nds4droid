@@ -60,14 +60,15 @@ public class RomCollection {
 		public boolean accept( File file ) {
 			return NDS_FILTER.accept( file )
 					|| ZIP_FILTER.accept( file )
-			    /*|| RAR_FILTER.accept( file )*/;
+			    /*|| RAR_FILTER.accept( file )
+			    * || SEVENZ_FILTER.accept( file) */;
 		}
 	};
 
 	private SQLiteDatabase DB;
 	private final File           ROOT;
 
-	private final Set<ScanListener> LISTENERS = new HashSet<ScanListener>();
+	private final Set<ScanListener> LISTENERS = new HashSet<>();
 
 	private NdsRom[] roms;
 
@@ -215,7 +216,7 @@ public class RomCollection {
 	
 	public NdsRom[] getRoms() {
 		if ( roms == null ) {
-			final LinkedList<NdsRom> list = new LinkedList<NdsRom>(); 
+			final LinkedList<NdsRom> list = new LinkedList<>();
 			Cursor c = DB.query( "roms", new String[]{ "path" },
 			                     null, null, null, null, "title" );
 			while ( c.moveToNext() ) {
@@ -237,8 +238,8 @@ public class RomCollection {
 	public interface ScanListener {
 		//----------------------------------------------------------------------
 		
-		public void onScanStarted(  RomCollection collection );
-		public void onScanFinished( RomCollection collection );
+		void onScanStarted(  RomCollection collection );
+		void onScanFinished( RomCollection collection );
 		
 		//----------------------------------------------------------------------
 	}

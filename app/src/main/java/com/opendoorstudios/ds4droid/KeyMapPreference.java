@@ -61,7 +61,7 @@ public class KeyMapPreference extends DialogPreference implements OnKeyListener 
 		RelativeLayout layout = (RelativeLayout)inflater.inflate(R.layout.keymap, null);
 		layout.setOnKeyListener(this);
 		layout.requestFocus();
-		currentValueDesc = (TextView)layout.findViewById(R.id.keymap_value);
+		currentValueDesc = (TextView) layout.findViewById(R.id.keymap_value);
 		sync();
 		
 		return layout;
@@ -87,7 +87,7 @@ public class KeyMapPreference extends DialogPreference implements OnKeyListener 
 		currentValue = keyCode;
 		sync();
 		return true;
-	};
+	}
 	
 	@Override
 	protected void onDialogClosed(boolean positiveResult) {
@@ -105,7 +105,7 @@ public class KeyMapPreference extends DialogPreference implements OnKeyListener 
 	}
 	
 	static {
-		KEYCODE_SYMBOLIC_NAMES = new SparseArray<String>();
+		KEYCODE_SYMBOLIC_NAMES = new SparseArray<>();
 		populateKeycodeSymbolicNames();
 	}
 	

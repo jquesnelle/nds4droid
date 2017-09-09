@@ -6,7 +6,7 @@ nds4droid is a free (including ad-free) open source Nintendo DS emulator for And
 
 All releases from [jquesnelle](https://github.com/jquesnelle) will come from him. All releases from this fork is not uploaded to the play store, but can be found in the releases section of this fork. APKs will be uploaded to the release section of this fork if I believe I need to.
 
-This is just a small update to nds4droid as v47.1.
+This is a development branch of version 48 of nds4droid. Use at your own risk.
 
 This emulator uses the [DeSmuME](http://desmume.org) 0.9.8 threaded interpreter (which is old), but also uses Lightning JIT if you want faster performance.
 

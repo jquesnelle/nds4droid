@@ -112,7 +112,7 @@ LOCAL_SRC_FILES			:= 	desmume/src/addons/slot1_none.cpp \
 							desmume/src/android/sndopensl.cpp \
 							desmume/src/android/draw.cpp 
 
-LOCAL_ARM_NEON 			:= false						
+LOCAL_ARM_NEON 			:= false
 #LOCAL_ARM_MODE 			:= thumb
 LOCAL_CFLAGS			:= -DANDROID -DHAVE_LIBZ -DNO_MEMDEBUG -DNO_GPUDEBUG -DHAVE_JIT -march=i686 -mtune=intel -mssse3 -mfpmath=sse -m32 -fno-branch-count-reg
 LOCAL_STATIC_LIBRARIES 	:= sevenzip asmjit
@@ -122,4 +122,4 @@ LOCAL_LDLIBS 			:= -llog -lz -lGLESv2 -lEGL -ljnigraphics -lOpenSLES -landroid
 #LOCAL_CFLAGS += -DMEASURE_FIRST_FRAMES
 
 include $(BUILD_SHARED_LIBRARY)
-
+include $(MY_LOCAL_PATH)/desmume/src/utils/AsmJit/asmjit.mk

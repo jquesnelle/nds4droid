@@ -1,9 +1,8 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 25
+    compileSdkVersion 23
     buildToolsVersion "26.0.1"
-
     defaultConfig {
         applicationId "com.opendoorstudios.ds4droid"
         minSdkVersion 14
@@ -11,7 +10,6 @@ android {
         versionCode 47
         versionName "47.1"
     }
-
     buildTypes {
         release {
             minifyEnabled false
@@ -21,7 +19,6 @@ android {
     lintOptions {
         checkReleaseBuilds false
     }
-
     externalNativeBuild {
         ndkBuild {
             path 'src/main/jni/Android.mk'

@@ -13,7 +13,6 @@ endif
 
 ifeq ($(TARGET_ARCH_ABI),x86)
 include $(LOCAL_BUILD_PATH)/desmume_x86.mk
-include $(LOCAL_BUILD_PATH)/desmume/src/utils/AsmJit/asmjit.mk
 endif
 
 ifeq ($(TARGET_ARCH_ABI),arm64-v8a)

@@ -54,6 +54,8 @@ class DeSmuME {
 				Log.i(MainActivity.TAG, "Using x86 native library");
 				break;
 			case CPUTYPE_ARM64:
+				// There is a problem with Lightning JIT on 64-bit devices that causes the app to hang.
+				// The NEON shared library can't be found for whatever reason.
 				System.loadLibrary("desmumearm64");
 				Log.i(MainActivity.TAG, "Using ARMv8-A (ARM64) library");
 				break;
